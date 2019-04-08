@@ -1,0 +1,71 @@
+.additional-goods {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 35px;
+  outline: 1px solid black;
+}
+
+.additional-goods__main-title {
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: $regular-font-weight;
+  margin-bottom: 30px;
+  color: $font-header-color;
+}
+
+.additional-goods__item {
+  border-top: 1px solid #cdcdcd;
+  padding-top: 8px;
+  padding-bottom: 16px;
+}
+
+.additional-goods__title {
+  font-size: 16px;
+  line-height: 16px;
+  color: #222222;
+  text-transform: uppercase;
+}
+
+.additional-goods__description-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.additional-goods__data {
+  font-family: $text-font-family;
+  font-size: $main-fz;
+  line-height: 14px;
+  color: $font-text-color;
+  width: 140px;
+  margin-bottom: 15px;
+}
+
+.additional-goods--price {
+  text-align-last: right;
+}
+
+.additional-goods__btn {
+  width: 100%;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.additional-goods__promo {
+  background-color: $main-color;
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  min-height: 290px;
+  text-align: center;
+}
+
+.additional-goods__promo-text {
+  font-family: $text-font-family;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 20px;
+  width: 170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 180px;
+}

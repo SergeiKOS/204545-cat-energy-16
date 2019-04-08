@@ -1,0 +1,48 @@
+.main-nav {
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: $medium-font-weight;
+}
+
+.main-nav__toggle,
+.page-header__toggle--close {
+  position: relative;
+  width: 70px;
+  height: 50px;
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+}
+
+.main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 24px;
+  height: 2px;
+  background-color: #222222;
+  box-shadow: 0 6px 0 0 #222222,
+    0 12px 0 0 #222222;
+}
+
+.main-nav__toggle--close::before,
+.main-nav__toggle--close::after {
+  content: "";
+  position: absolute;
+  top: 23px;
+  right: 20px;
+  width: 24px;
+  height: 2px;
+  background-color: #222222;
+}
+
+.main-nav__toggle--close::before {
+  transform: rotate(45deg);
+  box-shadow: none;
+}
+
+.main-nav__toggle--close::after {
+  transform: rotate(-45deg);
+}

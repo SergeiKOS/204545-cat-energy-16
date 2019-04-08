@@ -1,0 +1,160 @@
+.main-form {
+  padding-bottom: 35px;
+}
+
+.main-form__fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.main-form__fieldset--info,
+.main-form__fieldset--goal {
+  padding: 0;
+  margin: 0;
+  border-bottom: 1px solid #ededed;
+}
+
+.main-form__cat-info-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.main-form__cat-info-item,
+.main-form__cat-goal-item,
+.main-form__cat-contacts-item,
+.main-form__cat-user-comment {
+  text-transform: uppercase;
+  color: #222222;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.main-form__cat-info-item {
+  display: flex;
+}
+
+.main-form__label-text {
+  margin-right: 12px;
+  margin-top: 12px;
+}
+
+.main-form__input-text,
+.main-form__cat-user-comment {
+  padding-left: 12px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 12px;
+  flex-grow: 1;
+
+  &::placeholder {
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 18px;
+    color: $font-text-color;
+  }
+}
+
+.main-form__input-text {
+  margin-bottom: 14px;
+  flex-grow: 1;
+}
+
+.main-form__cat-user-comment {
+  width: 100%;
+}
+
+
+.main-form__cat-goal-list {
+  list-style-type: none;
+  margin: 0;
+  margin-left: 45px;
+  margin-top: 20px;
+  padding: 0;
+}
+
+.main-form__cat-goal-item {
+  margin-bottom: 25px;
+}
+
+
+.main-form__cat-goal-input + .main-form__cat-goal-label,
+.main-form__cat-extra-input + .main-form__cat-extra-label {
+  cursor: pointer;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: -45px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #cfcfcf;
+  }
+}
+
+.main-form__cat-goal-input + .main-form__cat-goal-label::before {
+  border-radius: 50%;
+}
+
+.main-form__cat-goal-input:checked + .main-form__cat-goal-label::after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  top: 6px;
+  left: -36px;
+  background-color: $main-color;
+  border-radius: 50%;
+}
+
+.main-form__cat-extra-input:checked + .main-form__cat-extra-label::after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  top: 6px;
+  left: -36px;
+  background-image: url("../img/icon-tick.svg");
+  background-repeat: no-repeat;
+}
+
+.main-form__legend-title {
+  font-size: 24px;
+  font-weight: $regular-font-weight;
+  line-height: 24px;
+  color: $font-header-color;
+  padding-top: 25px;
+  margin-bottom: 30px;
+}
+
+.main-form__cat-contacts-item {
+  display: flex;
+}
+
+.main-form__cat-contacts-list {
+  margin: 0;
+  padding: 0;
+}
+
+.main-form__cat-extra-list {
+  margin: 0;
+  padding: 0;
+  margin-left: 45px;
+  list-style-type: none;
+  text-transform: uppercase;
+}
+
+.main-form__cat-extra-item {
+  margin-bottom: 20px;
+}
+
+.main-form__required {
+  display: block;
+  margin-top: 17px;
+  font-family: $text-font-family;
+  font-size: $main-fz;
+  color: $font-text-color;
+}

@@ -1,0 +1,31 @@
+.pick-program {
+  color: #ffffff;
+  text-align: center;
+  outline: 1px solid black;
+}
+
+
+.pick-program__background-wrapper {
+  background-color: $main-color;
+  background-image: url("../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  min-height: 264px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 25px;
+}
+
+.pick-program__title {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: $regular-font-weight;
+  margin-bottom: 22px;
+}
+
+.pick-program__btn {
+  margin-right: 20px;
+  margin-left: 20px;
+  display: inline-block;
+  font-size: $main-fz;
+  line-height: 18px;
+}
