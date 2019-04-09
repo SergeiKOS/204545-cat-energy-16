@@ -5,44 +5,43 @@
   font-weight: $medium-font-weight;
 }
 
-.main-nav__toggle,
-.page-header__toggle--close {
+.main-nav__toggle {
   position: relative;
   width: 70px;
   height: 50px;
   background-color: inherit;
   border: none;
   cursor: pointer;
-}
 
-.main-nav__toggle::before {
-  content: "";
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  width: 24px;
-  height: 2px;
-  background-color: #222222;
-  box-shadow: 0 6px 0 0 #222222,
-    0 12px 0 0 #222222;
-}
+  &::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 24px;
+    height: 2px;
+    background-color: #222222;
+    box-shadow: 0 6px 0 0 #222222,
+      0 12px 0 0 #222222;
+  }
 
-.main-nav__toggle--close::before,
-.main-nav__toggle--close::after {
-  content: "";
-  position: absolute;
-  top: 23px;
-  right: 20px;
-  width: 24px;
-  height: 2px;
-  background-color: #222222;
-}
+  &--close::before,
+  &--close::after {
+    content: "";
+    position: absolute;
+    top: 23px;
+    right: 20px;
+    width: 24px;
+    height: 2px;
+    background-color: #222222;
+  }
 
-.main-nav__toggle--close::before {
-  transform: rotate(45deg);
-  box-shadow: none;
-}
+  &--close::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
 
-.main-nav__toggle--close::after {
-  transform: rotate(-45deg);
+  &--close::after {
+    transform: rotate(-45deg);
+  }
 }

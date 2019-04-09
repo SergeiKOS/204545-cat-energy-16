@@ -32,17 +32,17 @@
   font-family: $text-font-family;
   font-size: 12px;
   line-height: 16px;
-  color: $font-text-color;
+  color: #444444;
   width: 70px;
-}
 
-.product__data--key {
-  width: 70px;
-}
+  &--key {
+    width: 70px;
+  }
 
-.product__data--value {
-  width: 70px;
-  text-align: right;
+  &--value {
+    width: 70px;
+    text-align: right;
+  }
 }
 
 .product__btn {

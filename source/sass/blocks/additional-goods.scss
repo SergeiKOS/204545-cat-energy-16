@@ -10,7 +10,7 @@
   line-height: 24px;
   font-weight: $regular-font-weight;
   margin-bottom: 30px;
-  color: $font-header-color;
+  color: #111111;
 }
 
 .additional-goods__item {
@@ -34,15 +34,15 @@
 
 .additional-goods__data {
   font-family: $text-font-family;
-  font-size: $main-fz;
+  font-size: 14px;
   line-height: 14px;
-  color: $font-text-color;
+  color: #444444;
   width: 140px;
   margin-bottom: 15px;
-}
 
-.additional-goods--price {
-  text-align-last: right;
+  &--price {
+    text-align-last: right;
+  }
 }
 
 .additional-goods__btn {
