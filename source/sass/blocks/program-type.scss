@@ -1,0 +1,30 @@
+.program-type {
+  background-color: $main-color-background;
+  margin-bottom: 15px;
+}
+
+.program-type__title {
+  font-size: 24px;
+  font-weight: $regular-font-weight;
+  line-height: 37px;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 25px;
+  text-transform: uppercase;
+}
+
+.program-type__description {
+  font-family: $text-font-family;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+  margin-bottom: 23px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.program-type__btn {
+  text-transform: uppercase;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}

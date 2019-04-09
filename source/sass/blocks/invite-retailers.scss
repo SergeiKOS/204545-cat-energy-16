@@ -1,0 +1,25 @@
+.invite-retailers {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: $main-color-background;
+  display: flex;
+  outline: 1px solid black;
+}
+
+.invite-retailers--diff-background {
+  background-color: #f2f2f2;
+}
+
+.invite-retailers__title {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: $regular-font-weight;
+  text-transform: uppercase;
+  width: 140px;
+}
+
+.invite-retailers__address {
+  width: 140px;
+}
