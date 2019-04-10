@@ -38,25 +38,40 @@
   margin-top: 12px;
 }
 
+.main-form__input-text {
+  margin-bottom: 14px;
+  flex-grow: 1;
+  border: 1px solid #e6e6e6;
+  outline: none;
+
+  &:hover {
+    border-color: #cdcdcd;
+  }
+
+  &:focus {
+    border: 2px solid #444444;
+  }
+
+  &--error {
+    border: 2px solid #ff8282;
+  }
+}
+
 .main-form__input-text,
 .main-form__cat-user-comment {
   padding-left: 12px;
-  padding-top: 10px;
+  padding-top: 15px;
   padding-bottom: 10px;
   padding-right: 12px;
   flex-grow: 1;
 
   &::placeholder {
+    font-family: $special-font-family;
     text-transform: uppercase;
     font-size: 16px;
     line-height: 18px;
     color: #444444;
   }
-}
-
-.main-form__input-text {
-  margin-bottom: 14px;
-  flex-grow: 1;
 }
 
 .main-form__cat-user-comment {
@@ -76,7 +91,6 @@
   margin-bottom: 25px;
 }
 
-
 .main-form__cat-goal-input + .main-form__cat-goal-label,
 .main-form__cat-extra-input + .main-form__cat-extra-label {
   cursor: pointer;
@@ -90,6 +104,21 @@
     width: 30px;
     height: 30px;
     border: 1px solid #cfcfcf;
+  }
+
+  &:hover::before {
+    border-color: #bfbfbf;
+  }
+
+  &:active::before {
+    border-color: #ebebeb;
+  }
+}
+
+.main-form__cat-goal-label,
+.main-form__cat-extra-label {
+  &:active {
+    color: rgba(#222222, 0.3);
   }
 }
 
@@ -106,6 +135,12 @@
   left: -36px;
   background-color: $main-color;
   border-radius: 50%;
+}
+
+.main-form__cat-goal-input:checked + .main-form__cat-goal-label {
+  &:active::after {
+    background-color: #d1e9c3;
+  }
 }
 
 .main-form__cat-extra-input:checked + .main-form__cat-extra-label::after {
