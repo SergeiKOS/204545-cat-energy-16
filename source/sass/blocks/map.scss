@@ -1,3 +1,15 @@
 .map {
-  outline: 1px solid black;
+  margin-left: auto;
+  margin-right: auto;
+  width: 320px;
+}
+
+.map__image {
+  display: block;
+}
+
+@media (min-width: $desktop-width) {
+  .map {
+    width: 100%;
+  }
 }

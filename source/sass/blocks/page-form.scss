@@ -1,11 +1,19 @@
+.page-form .invite-retailers {
+  background-color: #f2f2f2;
+}
+
 .page-form__big-title-wrapper,
 .page-form__wrapper {
-  margin-left: 20px;
-  margin-right: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .page-form__big-title {
-  margin-bottom: 15px;
+  margin-top: 0;
+  margin-bottom: 25px;
   padding-bottom: 0;
 }
 

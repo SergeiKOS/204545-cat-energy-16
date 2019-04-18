@@ -11,7 +11,7 @@ var wait = require("gulp-wait"); // костыль, для правильной 
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
-    .pipe(wait(50))
+    .pipe(wait(100))
     .pipe(plumber())
     .pipe(sourcemap.init())
     .pipe(sass())
