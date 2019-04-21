@@ -1,8 +1,5 @@
 .page-catalog__wrapper {
-  width: 320px;
   margin-bottom: 25px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .page-catalog__big-title__wrapper {
@@ -34,24 +31,13 @@
   }
 
   .page-catalog__wrapper {
-    width: 768px;
-    padding-left: 30px;
-    padding-right: 30px;
     display: flex;
     flex-wrap: wrap;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-catalog__big-title {
-    width: 1300px;
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-
-  .page-catalog__wrapper {
     width: 1300px;
     padding-left: 40px;
     padding-right: 40px;

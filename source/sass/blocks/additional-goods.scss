@@ -1,10 +1,5 @@
 .additional-goods {
   margin-bottom: 35px;
-  width: 320px;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .additional-goods__main-title {
@@ -87,12 +82,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .additional-goods {
-    width: 768px;
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-
   .additional-goods__main-title {
     font-size: 36px;
     line-height: 36px;
@@ -159,9 +148,6 @@
 
 @media (min-width: $desktop-width) {
   .additional-goods {
-    width: 1300px;
-    padding-left: 40px;
-    padding-right: 40px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -193,7 +179,7 @@
     width: 70px;
     margin-right: 10px;
     text-align: left;
-    padding-top: 12px;
+    margin-bottom: 0;
   }
 
   .additional-goods__promo {

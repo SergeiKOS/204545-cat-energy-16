@@ -3,10 +3,8 @@
   padding: 0;
   margin: 0;
   text-align: center;
-  position: absolute;
   background-color: #ffffff;
   width: 320px;
-  left: 0;
   display: none;
 }
 
@@ -20,7 +18,7 @@
   padding-top: 20px;
   padding-bottom: 20px;
   display: inline-block;
-  cursor: pointer;
+  white-space: nowrap;
 
   &:hover {
     color: rgba(#111111, 0.6);
@@ -50,9 +48,36 @@
   }
 }
 
-
 @media (min-width: $tablet-width) {
   .site-list {
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    width: 480px;
+  }
+
+  .site-list__item {
+    margin-right: 40px;
+    border-bottom: none;
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+  }
+
+  .site-list__item-link {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list {
+    width: 900px;
+    text-align: right;
+  }
+
+  .site-list__item-link {
+    font-size: 20px;
   }
 }
