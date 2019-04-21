@@ -1,0 +1,109 @@
+.cat-before-after__img-before {
+  width: 320px;
+  display: block;
+  margin-top: 30px;
+  margin-left: -20px;
+  margin-bottom: 40px;
+}
+
+.cat-before-after-controls-wrapper {
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 320px;
+  margin-top: 25px;
+}
+
+.cat-before-after-btn {
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 20px;
+  color: #111111;
+  text-transform: uppercase;
+}
+
+.cat-before-after__before {
+  margin-right: 15px;
+}
+
+.cat-before-after__range {
+  width: 84px;
+  height: 14px;
+  background-color: #ffffff;
+  border-radius: 6px;
+  border: 1px solid #cdcdcd;
+  margin-right: 15px;
+}
+
+.cat-before-after__range-progress {
+  border-radius: 3px;
+  background-color: $main-color;
+  width: 35px;
+  height: 6px;
+  margin-top: 3px;
+  margin-left: 5px;
+}
+
+@media (min-width: $tablet-width) {
+  .cat-before-after {
+    background-color: #f2f2f2;
+    padding-bottom: 73px;
+  }
+
+  .cat-before-after-controls-wrapper {
+    width: 580px;
+    padding-left: 0;
+  }
+
+  .cat-before-after-btn {
+    font-size: 20px;
+    border-bottom: 1px dotted #b8b8b8;
+    padding: 0;
+    padding-bottom: 5px;
+  }
+
+  .cat-before-after__after {
+    margin-left: 12px;
+  }
+
+  .cat-before-after__before {
+    margin-right: 12px;
+  }
+
+  .cat-before-after__range {
+    width: 428px;
+    height: 6px;
+    background-color: #dcdcdc;
+    border-radius: 2.5px;
+    margin-right: 0;
+  }
+
+  .cat-before-after__range-progress {
+    border: 1px solid #cfcfcf;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+    background-color: #ffffff;
+    width: 34px;
+    height: 34px;
+    margin-top: -15px;
+    margin-left: 200px;
+    cursor: pointer;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      top: 12px;
+      left: 12px;
+      background-color: $main-color;
+      border-radius: 50%;
+    }
+  }
+}

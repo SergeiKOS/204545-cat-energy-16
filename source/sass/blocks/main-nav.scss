@@ -5,6 +5,11 @@
   font-weight: $medium-font-weight;
 }
 
+.main-nav__list {
+  position: absolute;
+  left: 0;
+}
+
 .main-nav__toggle {
   position: relative;
   width: 70px;
@@ -21,8 +26,8 @@
     width: 24px;
     height: 2px;
     background-color: #222222;
-    box-shadow: 0 6px 0 0 #222222,
-      0 12px 0 0 #222222;
+    box-shadow: 0 7px 0 0 #222222,
+      0 14px 0 0 #222222;
   }
 
   &--close::before,
@@ -43,5 +48,15 @@
 
   &--close::after {
     transform: rotate(-45deg);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__list {
+    position: relative;
   }
 }
