@@ -7,3 +7,18 @@
 .page-header__logo {
   margin-right: 35px;
 }
+
+@media (max-width: $mobile-width-only) {
+  .page-header__wrapper--nojs .site-list {
+    display: block;
+    position: static;
+  }
+
+  .page-header__wrapper.page-header__wrapper--nojs {
+    display: block;
+  }
+
+  .page-header__wrapper--nojs .main-nav__toggle {
+    display: none;
+  }
+}

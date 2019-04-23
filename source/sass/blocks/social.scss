@@ -1,7 +1,8 @@
 .social__list {
   list-style-type: none;
   display: flex;
-  margin-top: 20px;
+  margin-top: 12px;
+  margin-bottom: 20px;
   align-items: center;
 }
 
@@ -11,22 +12,21 @@
 }
 
 .social-link--vk {
-  background-image: url("../../img/icon-vk-mobile.svg");
-  width: 22px;
-  height: 12px;
+  width: 30px;
+  height: 15px;
   margin-left: 29px;
 }
 
 .social-link--instagram {
-  width: 16px;
-  height: 16px;
-  background-image: url("../../img/icon-insta-mobile.svg");
+  width: 23px;
+  height: 23px;
+  padding-top: 4px;
 }
 
 .social-link--facebook {
-  width: 10px;
-  height: 19px;
-  background-image: url("../../img/icon-fb-mobile.svg");
+  width: 13px;
+  height: 27px;
+  padding-top: 4px;
 }
 
 .copyright__link {

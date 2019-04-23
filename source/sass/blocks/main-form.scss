@@ -48,20 +48,40 @@
 .main-form__input-text {
   margin-bottom: 14px;
   flex-grow: 1;
-  border: 1px solid #e6e6e6;
-  outline: none;
+  outline: 1px solid #e6e6e6;
+  border: none;
 
   &:hover {
-    border-color: #cdcdcd;
+    outline-color: #cdcdcd;
   }
 
   &:focus {
-    border: 2px solid #444444;
+    outline: 2px solid #444444;
   }
 
-  &--error {
-    border: 2px solid #ff8282;
+  &:invalid {
+    outline: 2px solid #ff8282;
   }
+}
+
+.main-form__input-text--email {
+  position: absolute;
+  top: 12px;
+  right: 20px;
+
+  // &:active {
+  //   fill: $main-color;
+  // }
+
+  // &:invalid {
+  //   ff8282
+  // }
+}
+
+.main-form__input-text--tel {
+  position: absolute;
+  top: 10px;
+  right: 16px;
 }
 
 .main-form__input-text,
@@ -172,13 +192,14 @@
   margin-bottom: 30px;
 }
 
-.main-form__cat-contacts-item {
-  display: flex;
-}
-
 .main-form__cat-contacts-list {
   margin: 0;
   padding: 0;
+}
+
+.main-form__cat-contacts-item {
+  display: flex;
+  position: relative;
 }
 
 .main-form__cat-extra-list {

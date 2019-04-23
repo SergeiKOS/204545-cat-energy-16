@@ -13,9 +13,44 @@
   font-size: 24px;
   font-weight: $regular-font-weight;
   line-height: 37px;
-  text-align: center;
   padding-top: 30px;
+  padding-left: 70px;
   text-transform: uppercase;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    z-index: 1;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    top: 25px;
+    left: 0;
+    background-color: $main-color;
+  }
+
+  &--slim::before {
+    background-image: url("../img/icon-cat-slim.svg");
+    width: 35px;
+    height: 49px;
+    left: 10px;
+    top: 25px;
+  }
+
+  &--gain::before {
+    background-image: url("../img/icon-cat-pro.svg");
+    width: 67px;
+    height: 28px;
+    left: -10px;
+    top: 35px;
+  }
 }
 
 .program-type__description {
@@ -32,6 +67,29 @@
   text-transform: uppercase;
   padding-top: 15px;
   padding-bottom: 15px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 11px;
+    top: 22px;
+    right: -38px;
+    background-image: url("../img/icon-right-arrow-long.svg");
+    background-repeat: no-repeat;
+  }
+
+  &:hover::after {
+    width: 33px;
+    right: -47px;
+    background-image: url("../img/icon-right-arrow-verylong.svg");
+  }
+
+  &:active {
+    color: rbga(#444444, 0.3);
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {

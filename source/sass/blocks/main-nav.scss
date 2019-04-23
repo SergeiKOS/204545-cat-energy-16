@@ -30,23 +30,23 @@
       0 14px 0 0 #222222;
   }
 
-  &--close::before,
-  &--close::after {
+  &--closed::before,
+  &--closed::after {
     content: "";
     position: absolute;
-    top: 23px;
+    top: 27px;
     right: 20px;
     width: 24px;
     height: 2px;
     background-color: #222222;
   }
 
-  &--close::before {
+  &--closed::before {
     transform: rotate(45deg);
     box-shadow: none;
   }
 
-  &--close::after {
+  &--closed::after {
     transform: rotate(-45deg);
   }
 }
