@@ -15,6 +15,7 @@
   line-height: 37px;
   padding-top: 30px;
   padding-left: 70px;
+  margin-bottom: 27px;
   text-transform: uppercase;
   position: relative;
 
@@ -58,7 +59,7 @@
   font-size: 14px;
   line-height: 18px;
   color: #444444;
-  margin-bottom: 23px;
+  margin-bottom: 15px;
   padding-bottom: 20px;
   border-bottom: 1px solid #d9d9d9;
 }
@@ -94,10 +95,11 @@
 
 @media (min-width: $tablet-width) {
   .program-type {
-    margin-bottom: 40px;
+    padding-top: 36px;
     padding-left: 50px;
     padding-right: 50px;
     padding-bottom: 60px;
+    margin-bottom: 30px;
     width: 708px;
   }
 
@@ -105,12 +107,36 @@
     font-size: 36px;
     line-height: 37px;
     text-align: left;
-    padding-top: 70px;
+    padding-top: 37px;
+    padding-left: 0;
+    margin-top: 0;
+
+    &::after {
+      width: 200px;
+      height: 200px;
+      top: 56px;
+      left: 399px;
+    }
+
+    &--slim::before {
+      width: 140px;
+      height: 194px;
+      left: 427px;
+      top: 44px;
+    }
+
+    &--gain::before {
+      width: 268px;
+      height: 112px;
+      left: 360px;
+      top: 95px;
+    }
   }
 
   .program-type__description {
-    width: 390px;
+    width: 370px;
     border-bottom: none;
+    margin-bottom: 55px;
   }
 
   .program-type__btn {
@@ -121,5 +147,29 @@
 @media (min-width: $desktop-width) {
   .program-type {
     width: 570px;
+    margin-left: 10px;
+  }
+
+  .program-type__title {
+    &::after {
+      width: 100px;
+      height: 100px;
+      top: 25px;
+      left: 400px;
+    }
+
+    &--slim::before {
+      width: 70px;
+      height: 97px;
+      left: 400px;
+      top: 25px;
+    }
+
+    &--gain::before {
+      width: 134px;
+      height: 56px;
+      left: 400px;
+      top: 35px;
+    }
   }
 }

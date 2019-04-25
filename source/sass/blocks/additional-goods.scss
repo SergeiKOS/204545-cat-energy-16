@@ -10,7 +10,7 @@
   padding-bottom: 35px;
   border-bottom: 1px solid #cdcdcd;
   margin: 0;
-  margin-top: 30px;
+  margin-top: 32px;
   position: relative;
 }
 
@@ -85,6 +85,9 @@
   .additional-goods__main-title {
     font-size: 36px;
     line-height: 36px;
+    margin-top: -100px;
+    margin-left: 33px;
+    margin-bottom: 50px;
 
     &::before,
     &::after {
@@ -110,13 +113,15 @@
     padding-top: 20px;
     padding-bottom: 20px;
     align-items: center;
+    border: 1px solid #e6e6e6;
   }
 
   .additional-goods__title {
     font-size: 20px;
     line-height: 20px;
     width: 284px;
-    margin-right: 60px;
+    margin-right: 20px;
+    margin-left: 40px;
   }
 
   .additional-goods__data--size {
@@ -127,11 +132,19 @@
   .additional-goods__data--price {
     width: 95px;
     margin-left: auto;
+    margin-right: 38px;
+  }
+
+  .additional-goods__btn {
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 10px;
   }
 
   .additional-goods__promo {
     min-height: 200px;
     margin-bottom: 70px;
+    margin-top: 80px;
   }
 
   .additional-goods__promo-text {
@@ -155,7 +168,9 @@
 
   .additional-goods__main-title {
     width: 100%;
-    padding-bottom: 80px;
+    padding-bottom: 75px;
+    margin-left: 0;
+    margin-bottom: 0;
 
     &::after {
       width: 880px;
@@ -166,6 +181,10 @@
     justify-content: space-between;
     margin: 0;
     width: 895px;
+    border-left: none;
+    border-right: none;
+    padding-top: 14px;
+    padding-bottom: 15px;
   }
 
   .additional-goods__title,
@@ -185,7 +204,7 @@
   .additional-goods__promo {
     width: 245px;
     min-height: 290px;
-    margin-top: 20px;
+    margin-top: 0;
   }
 
   .additional-goods__promo-text {

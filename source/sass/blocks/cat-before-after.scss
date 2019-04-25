@@ -65,6 +65,7 @@
   .cat-before-after {
     background-color: #f2f2f2;
     padding-bottom: 73px;
+    min-height: 650px;
   }
 
   .cat-before-after-controls-wrapper {
@@ -130,5 +131,11 @@
       background-color: $main-color;
       border-radius: 50%;
     }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .cat-before-after {
+    min-height: auto;
   }
 }

@@ -6,6 +6,13 @@
 
 .map__image {
   display: block;
+  height: 360px;
+}
+
+@media (min-width: $tablet-width) {
+  .map__image {
+    height: 390px;
+  }
 }
 
 @media (min-width: $desktop-width) {

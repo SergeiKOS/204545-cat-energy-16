@@ -11,10 +11,28 @@
   margin-right: 40px;
 }
 
+.social-link svg,
+.copyright__link svg {
+  fill: #666666;
+
+  &:hover {
+    fill: $main-color;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 .social-link--vk {
   width: 30px;
   height: 15px;
   margin-left: 29px;
+}
+
+.social-link--vk svg {
+  width: 30px;
+  height: 15.7px;
 }
 
 .social-link--instagram {
@@ -23,13 +41,23 @@
   padding-top: 4px;
 }
 
+.social-link--instagram svg {
+  width: 23px;
+  height: 23px;
+}
+
 .social-link--facebook {
   width: 13px;
   height: 27px;
   padding-top: 4px;
 }
 
-.copyright__link {
+.social-link--facebook svg {
+  width: 13.5px;
+  height: 27.7px;
+}
+
+.copyright__link svg {
   width: 27px;
   height: 34px;
 }

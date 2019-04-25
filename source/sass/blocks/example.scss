@@ -5,13 +5,15 @@
 
 .example__big-title {
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .example__description {
   margin: 0;
   margin-top: 5px;
-  margin-bottom: 35px;
+  margin-bottom: 26px;
+  width: 270px;
+  line-height: 18px;
 }
 
 .example__results-wrapper {
@@ -24,7 +26,7 @@
   display: inline-block;
   width: 125px;
   margin-right: 13px;
-  padding-top: 15px;
+  padding-top: 6px;
   text-align: center;
   border: 1px solid #cdcdcd;
 
@@ -37,7 +39,7 @@
 .example__results-fact {
   text-transform: uppercase;
   font-size: 24px;
-  line-height: 24px;
+  line-height: 32px;
   color: #111111;
   display: block;
   margin-bottom: 10px;
@@ -81,6 +83,8 @@
   .example__description {
     font-size: 16px;
     line-height: 24px;
+    width: 100%;
+    margin-bottom: 55px;
   }
 
   .example__results-expenses-wrapper {
