@@ -1,7 +1,11 @@
+.page-header {
+  padding-bottom: 5px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
 .page-header__wrapper {
   display: flex;
   position: relative;
-  border-bottom: 1px solid #e6e6e6;
 }
 
 .page-header__logo {
@@ -37,7 +41,8 @@ a[href].page-header__logo img {
 }
 
 @media (min-width: $tablet-width) {
-  .page-header__wrapper {
+  .page-header {
+    padding-top: 12px;
     border-bottom: none;
   }
 }

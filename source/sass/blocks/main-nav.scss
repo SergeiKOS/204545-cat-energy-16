@@ -52,6 +52,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .main-nav {
+    padding-top: 7px;
+  }
+
   .main-nav__toggle {
     display: none;
   }

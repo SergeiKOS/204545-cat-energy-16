@@ -28,6 +28,7 @@ a[href].page-footer__company-name img {
 }
 
 .page-footer__copyright {
+  margin-top: 6px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -37,7 +38,7 @@ a[href].page-footer__company-name img {
   .page-footer__wrapper {
     display: flex;
     align-items: center;
-    padding-top: 40px;
+    padding-top: 49px;
     padding-bottom: 40px;
   }
 
@@ -59,6 +60,10 @@ a[href].page-footer__company-name img {
 }
 
 @media (min-width: $desktop-width) {
+  .page-footer {
+    padding-top: 10px;
+  }
+
   .page-footer__social {
     width: 324px;
     margin-right: 350px;

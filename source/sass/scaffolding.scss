@@ -30,6 +30,7 @@ body {
   font-family: $special-font-family;
   color: #111111;
   min-width: 320px;
+  overflow: overlay;
 }
 
 a {

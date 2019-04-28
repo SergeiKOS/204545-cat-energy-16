@@ -1,11 +1,9 @@
 .how-it-works {
-  padding-bottom: 15px;
+  padding-bottom: 22px;
 }
 
 .how-it-works__big-title {
-  margin: 0;
-  margin-bottom: 25px;
-  padding: 0;
+  margin-bottom: 27px;
 }
 
 .how-it-works__list {
@@ -15,68 +13,53 @@
 }
 
 .how-it-works__item {
-  margin-bottom: 26px;
-  margin-left: 80px;
+  margin-bottom: 20px;
   line-height: 18px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 80px;
   position: relative;
 
   &::before {
     content: "";
     position: absolute;
-    left: -80px;
-    top: -3px;
+    left: 0;
+    top: 0;
     width: 60px;
     height: 60px;
     background-color: $main-color;
-  }
-
-  &--leaf::after,
-  &--powder::after,
-  &--dining::after,
-  &--clock::after {
-    content: "";
-    position: absolute;
-    top: 12px;
-    left: -65px;
-    width: 30px;
-    height: 30px;
     background-repeat: no-repeat;
     background-position: center center;
   }
 
-  &--leaf::after {
+  &--leaf::before {
     background-image: url("../img/advantage-leaf@1x.png");
   }
 
-  &--powder::after {
+  &--powder::before {
     background-image: url("../img/advantage-powder@1x.png");
-    height: 33px;
   }
 
-  &--dining::after {
+  &--dining::before {
     background-image: url("../img/advantage-dining@1x.png");
   }
 
-  &--clock::after {
+  &--clock::before {
     background-image: url("../img/advantage-clock@1x.png");
   }
 }
 
-.how-it-works__item span {
-  display: none;
-}
-
 @media (min-width: $tablet-width) {
   .how-it-works {
-    padding-bottom: 60px;
-    padding-top: 25px;
+    padding-bottom: 53px;
+    padding-top: 12px;
     border-bottom: 1px solid #d9d9d9;
   }
 
   .how-it-works__big-title {
     font-size: 60px;
     line-height: 60px;
-    padding-bottom: 160px;
+    margin-bottom: 72px;
   }
 
   .how-it-works__list {
@@ -85,78 +68,77 @@
   }
 
   .how-it-works__item {
-    width: 240px;
+    width: 324px;
     margin-left: 0;
     font-size: 16px;
     line-height: 24px;
-    margin-top: 200px;
+    padding-top: 112px;
+    padding-left: 0;
+    padding-right: 65px;
     margin-bottom: 45px;
     position: relative;
 
     &:nth-child(2n+1) {
-      margin-right: 145px;
+      margin-right: auto;
     }
 
     &:nth-child(1),
     &:nth-child(2) {
       margin-top: 0;
+      margin-bottom: 130px;
     }
 
     &::before {
-      left: 0;
-      top: -110px;
       width: 80px;
       height: 80px;
     }
 
-    &--leaf::after,
-    &--powder::after,
-    &--dining::after,
-    &--clock::after {
-      top: -85px;
-      left: 25px;
-      width: 30px;
-      height: 30px;
-      background-repeat: no-repeat;
-      background-position: center center;
+    &::after {
+      position: absolute;
+      top: 90px;
+      left: 110px;
+      font-family: $special-font-family;
+      font-size: 281px;
+      color: #f2f2f2;
+      z-index: -1;
     }
-  }
 
-  .how-it-works__item span {
-    display: inline;
-  }
+    &:nth-child(1)::after {
+      content: "1";
+    }
 
-  .how-it-works__item--leaf span,
-  .how-it-works__item--powder span,
-  .how-it-works__item--dining span,
-  .how-it-works__item--clock span {
-    font-family: $special-font-family;
-    font-size: 281px;
-    color: #f2f2f2;
-    position: absolute;
-    top: -25px;
-    left: 120px;
-    z-index: -1;
+    &:nth-child(2)::after {
+      content: "2";
+    }
+
+    &:nth-child(3)::after {
+      content: "3";
+    }
+
+    &:nth-child(4)::after {
+      content: "4";
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .how-it-works {
     border-bottom: none;
-    margin-bottom: 150px;
-  }
-
-  .how-it-works__list {
-    justify-content: space-between;
+    padding-bottom: 34px;
   }
 
   .how-it-works__item {
     width: 245px;
-    margin-top: 0;
-    margin-right: 0;
+    margin-right: auto;
+    padding-right: 0;
 
-    &:first-child {
+    &:last-child {
       margin-right: 0;
+    }
+
+    &:nth-child(1),
+    &:nth-child(2) {
+      margin-bottom: 0;
     }
   }
 }

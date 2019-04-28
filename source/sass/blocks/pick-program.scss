@@ -14,7 +14,7 @@
   min-height: 305px;
   padding-left: 20px;
   padding-right: 20px;
-  padding-top: 25px;
+  padding-top: 30px;
 }
 
 .pick-program__title {
@@ -25,7 +25,7 @@
   width: 280px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 5px;
+  margin-top: 0;
 }
 
 .pick-program__slogan {
@@ -64,7 +64,8 @@
 
 @media (min-width: $tablet-width) {
   .pick-program {
-    min-height: 865px;
+    min-height: 855px;
+    padding-top: 16px;
   }
 
   .pick-program__background-wrapper {
@@ -74,13 +75,12 @@
   }
 
   .pick-program__title {
-    padding-top: 23px;
     color: #111111;
     font-size: 60px;
     line-height: 60px;
     width: 427px;
     text-align: left;
-    margin-left: 70px;
+    margin-left: 67px;
     margin-right: 0;
     margin-bottom: 40px;
   }
@@ -101,12 +101,12 @@
 
   .pick-program__btn {
     position: absolute;
-    top: -220px;
-    left: -103px;
+    top: -243px;
+    left: -105px;
     margin: 0;
     font-size: 20px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 17px;
+    padding-bottom: 17px;
     padding-left: 22px;
     padding-right: 22px;
     width: 245px;
@@ -115,7 +115,9 @@
 
 @media (min-width: $desktop-width) {
   .pick-program {
-    min-height: 655px;
+    min-height: 682px;
+    padding-top: 98px;
+    margin-left: 41px;
   }
 
   .pick-program__background-wrapper {
@@ -124,15 +126,15 @@
 
   .pick-program__title {
     margin-left: 80px;
-    margin-bottom: 30px;
+    margin-bottom: 41px;
   }
 
   .pick-program__slogan {
     margin-left: 80px;
-    margin-bottom: 40px;
+    margin-bottom: 78px;
   }
 
   .pick-program__btn {
-    left: -365px;
+    left: -390px;
   }
 }

@@ -1,19 +1,15 @@
 .cat-before-after__img-before {
   width: 320px;
   display: block;
-  margin-top: 30px;
   margin-left: -20px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .cat-before-after-controls-wrapper {
   display: flex;
   align-items: center;
-  padding-left: 30px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 320px;
-  margin-top: 25px;
+  padding-left: 40px;
+  width: 280px;
 }
 
 .cat-before-after-btn {
@@ -50,6 +46,7 @@
   border-radius: 6px;
   border: 1px solid #cdcdcd;
   margin-right: 15px;
+  padding-top: 3px;
 }
 
 .cat-before-after__range-progress {
@@ -57,7 +54,6 @@
   background-color: $main-color;
   width: 35px;
   height: 6px;
-  margin-top: 3px;
   margin-left: 5px;
 }
 
@@ -65,7 +61,7 @@
   .cat-before-after {
     background-color: #f2f2f2;
     padding-bottom: 73px;
-    min-height: 650px;
+    min-height: 700px;
   }
 
   .cat-before-after-controls-wrapper {
@@ -137,5 +133,7 @@
 @media (min-width: $desktop-width) {
   .cat-before-after {
     min-height: auto;
+    margin-top: -434px;
+    background: linear-gradient(to bottom, #ffffff 0%, #ffffff 192px, $main-color-background 193px, $main-color-background 100%);
   }
 }
