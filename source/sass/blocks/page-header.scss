@@ -46,3 +46,9 @@ a[href].page-header__logo img {
     border-bottom: none;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    padding-bottom: 0;
+  }
+}

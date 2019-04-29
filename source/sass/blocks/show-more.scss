@@ -59,7 +59,9 @@
 
 @media (min-width: $tablet-width) {
   .show-more {
-    padding-top: 168px;
+    padding-top: 28px;
+    align-self: flex-end;
+    height: 432px;
     border: 1px solid #e6e6e6;
     width: 324px;
     padding-left: 38px;
