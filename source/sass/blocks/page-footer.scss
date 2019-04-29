@@ -3,9 +3,23 @@
 }
 
 .page-footer__company-name {
-  padding-top: 38px;
-  padding-bottom: 30px;
+  padding-top: 28px;
+  padding-bottom: 12px;
   text-align: center;
+  display: block;
+}
+
+a[href].page-footer__company-name img {
+  width: 130px;
+  height: 50px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .page-footer__social {
@@ -13,11 +27,18 @@
   border-bottom: 1px solid #d9d9d9;
 }
 
+.page-footer__copyright {
+  margin-top: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 @media (min-width: $tablet-width) {
   .page-footer__wrapper {
     display: flex;
     align-items: center;
-    padding-top: 40px;
+    padding-top: 49px;
     padding-bottom: 40px;
   }
 
@@ -39,6 +60,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .page-footer {
+    padding-top: 10px;
+  }
+
   .page-footer__social {
     width: 324px;
     margin-right: 350px;

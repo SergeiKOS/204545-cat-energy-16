@@ -1,9 +1,48 @@
+.page-header {
+  padding-bottom: 5px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
 .page-header__wrapper {
   display: flex;
   position: relative;
-  border-bottom: 1px solid #e6e6e6;
 }
 
 .page-header__logo {
   margin-right: 35px;
+}
+
+a[href].page-header__logo img {
+  width: 195px;
+  height: 50px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .page-header__wrapper--nojs .site-list {
+    display: block;
+    position: static;
+  }
+
+  .page-header__wrapper.page-header__wrapper--nojs {
+    display: block;
+  }
+
+  .page-header__wrapper--nojs .main-nav__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    padding-top: 12px;
+    border-bottom: none;
+  }
 }

@@ -1,30 +1,27 @@
-.page-catalog__wrapper {
-  margin-bottom: 25px;
-}
-
-.page-catalog__big-title__wrapper {
-  text-align: center;
+.page-catalog {
+  padding-top: 15px;
 }
 
 .page-catalog__big-title {
   margin: 0;
-  margin-top: 5px;
-  margin-left: -15px;
   margin-bottom: 0;
-  padding-bottom: 25px;
+  padding-bottom: 28px;
   border-bottom: 1px solid #e6e6e6;
 }
 
 @media (min-width: $tablet-width) {
+  .page-catalog {
+    padding-top: 46px;
+  }
+
   .page-catalog__big-title {
     font-size: 60px;
     line-height: 60px;
     text-align: left;
     border-bottom: none;
     width: 768px;
-    padding-left: 30px;
     padding-right: 30px;
-    margin-bottom: 120px;
+    margin-bottom: 26px;
     padding-bottom: 0;
     margin-left: auto;
     margin-right: auto;
@@ -33,13 +30,14 @@
   .page-catalog__wrapper {
     display: flex;
     flex-wrap: wrap;
+    padding-bottom: 37px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-catalog__big-title {
     width: 1300px;
-    padding-left: 40px;
     padding-right: 40px;
+    padding-top: 48px;
   }
 }

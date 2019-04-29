@@ -75,9 +75,29 @@
   .site-list {
     width: 900px;
     text-align: right;
+    background-color: $main-color;
   }
 
   .site-list__item-link {
     font-size: 20px;
+    color: #ffffff;
+
+    &:hover {
+      color: rgba(#ffffff, 0.6);
+    }
+
+    &:active {
+      color: rgba(#ffffff, 0.3);
+    }
+
+    &--active {
+      &:hover {
+        color: rgba(#ffffff, 1);
+      }
+
+      &::after {
+        box-shadow: 0 2px 0 0 #ffffff;
+      }
+    }
   }
 }
