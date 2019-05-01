@@ -1,8 +1,8 @@
 .btn {
   padding-left: 20px;
   padding-right: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 11px;
+  padding-bottom: 11px;
   background-color: $main-color;
   color: #ffffff;
   font-family: $special-font-family;
@@ -11,5 +11,13 @@
   line-height: 18px;
   text-transform: uppercase;
   border: none;
-  display: inline-block;
+  display: block;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: rgba(#ffffff, 0.3);
+  }
 }

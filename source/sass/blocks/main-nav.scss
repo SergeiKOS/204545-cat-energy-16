@@ -54,6 +54,7 @@
 @media (min-width: $tablet-width) {
   .main-nav {
     padding-top: 7px;
+    flex-grow: 1;
   }
 
   .main-nav__toggle {
