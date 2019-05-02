@@ -17,33 +17,24 @@
 .site-list__item-link {
   padding-top: 20px;
   padding-bottom: 20px;
-  display: inline-block;
+  display: block;
   white-space: nowrap;
 
-  &:hover {
+
+  &:not(&--active):hover {
     color: rgba(#111111, 0.6);
   }
 
-  &:active {
+  &:not(&--active):active {
     color: rgba(#111111, 0.3);
   }
 
   &--active {
-    cursor: auto;
+    cursor: default;
     position: relative;
 
     &:hover {
       color: rgba(#111111, 1);
-    }
-
-    &::after {
-      content: "";
-      position: absolute;
-      box-shadow: 0 2px 0 0 $main-color;
-      width: 100%;
-      height: 2px;
-      top: 47px;
-      left: 0;
     }
   }
 }
@@ -53,14 +44,16 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
-    width: 480px;
+    width: auto;
+    margin-left: auto;
   }
 
   .site-list__item {
-    margin-right: 40px;
     border-bottom: none;
+    padding-top: 11px;
+    margin-right: 36px;
 
-    &:nth-child(3n) {
+    &:last-child {
       margin-right: 0;
     }
   }
@@ -68,36 +61,37 @@
   .site-list__item-link {
     font-size: 18px;
     line-height: 24px;
+    padding-top: 0;
+    padding-bottom: 0;
+    font-weight: 400;
+
+    &--active::after {
+      content: "";
+      position: absolute;
+      background-color: $main-color;
+      height: 2px;
+      bottom: -10px;
+      left: 0;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .site-list {
-    width: 900px;
+    width: 50%;
+    background-color: transparent;
     text-align: right;
-    background-color: $main-color;
   }
 
   .site-list__item-link {
     font-size: 20px;
-    color: #ffffff;
 
-    &:hover {
-      color: rgba(#ffffff, 0.6);
+    &:not(&--active):hover {
+      color: rgba(#111111, 0.6);
     }
 
-    &:active {
-      color: rgba(#ffffff, 0.3);
-    }
-
-    &--active {
-      &:hover {
-        color: rgba(#ffffff, 1);
-      }
-
-      &::after {
-        box-shadow: 0 2px 0 0 #ffffff;
-      }
+    &:not(&--active):active {
+      color: rgba(#111111, 0.3);
     }
   }
 }

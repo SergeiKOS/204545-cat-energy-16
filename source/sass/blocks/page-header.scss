@@ -1,11 +1,35 @@
 .page-header {
-  padding-bottom: 5px;
+  position: relative;
+  padding-top: 5px;
   border-bottom: 1px solid #e6e6e6;
+
+  &--index::after {
+    position: absolute;
+    content: "";
+    display: block;
+    background-color: $main-color;
+    background-image: url("../img/index-background-mobile@1x.jpg");
+    background-size: cover;
+    width: 320px;
+    height: 306px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      .page-header {
+        &::after {
+          background-image: url("../img/index-background-mobile@2x.jpg");
+        }
+      }
+    }
+  }
 }
 
 .page-header__wrapper {
   display: flex;
   position: relative;
+  padding-bottom: 5px;
 }
 
 .page-header__logo {
@@ -42,7 +66,65 @@ a[href].page-header__logo img {
 
 @media (min-width: $tablet-width) {
   .page-header {
-    padding-top: 12px;
     border-bottom: none;
+
+    &--index::after {
+      display: none;
+    }
+  }
+
+  .page-header__logo img {
+    width: 173px;
+    height: 58px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    padding-top: 54px;
+    padding-bottom: 0;
+
+    &--index {
+      &::after {
+        display: block;
+        width: calc(50% + 1px);
+        height: 696px;
+        left: unset;
+        right: 0;
+        top: 0;
+        transform: unset;
+        background-image: url("../img/index-background-desktop@1x.jpg");
+        background-position-x: right;
+
+        @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+          .page-header {
+            &::after {
+              background-image: url("../img/index-background-desktop@2x.jpg");
+            }
+          }
+        }
+      }
+
+      .site-list__item-link {
+        color: #ffffff;
+
+        &::after {
+          background-color: #ffffff;
+        }
+
+        &:not(.site-list__item-link--active):hover {
+          color: rgba(#ffffff, 0.6);
+        }
+
+        &:not(.site-list__item-link--active):active {
+          color: rgba(#ffffff, 0.3);
+        }
+      }
+    }
+  }
+
+  .page-header__logo img {
+    width: 202px;
+    height: 59px;
   }
 }

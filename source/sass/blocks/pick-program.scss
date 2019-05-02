@@ -1,27 +1,14 @@
 .pick-program {
   color: #ffffff;
   text-align: center;
-}
-
-.pick-program__background-wrapper {
-  background-color: $main-color;
-  background-image: url("../img/index-background-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: top center;
-  width: 320px;
-  margin-left: auto;
-  margin-right: auto;
-  min-height: 305px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 30px;
+  padding-top: 27px;
 }
 
 .pick-program__title {
   font-size: 36px;
   line-height: 36px;
   font-weight: $regular-font-weight;
-  margin-bottom: 22px;
+  margin-bottom: 25px;
   width: 280px;
   margin-left: auto;
   margin-right: auto;
@@ -33,10 +20,12 @@
   font-weight: $regular-font-weight;
   font-size: 14px;
   line-height: 14px;
+  margin-bottom: 28px;
 }
 
 .pick-program__img {
-  margin-top: -152px;
+  display: inline-block;
+  vertical-align: bottom;
 }
 
 .pick-program__btn-wrapper {
@@ -46,32 +35,24 @@
 }
 
 .pick-program__btn {
-  margin-right: 20px;
-  margin-left: 20px;
-  display: inline-block;
-  font-size: 14px;
-  line-height: 18px;
-  width: 280px;
-
-  &:hover {
-    background-color: #5eaa2f;
-  }
-
-  &:active {
-    color: rgba(#ffffff, 0.3);
-  }
+  margin-top: 3px;
 }
 
 @media (min-width: $tablet-width) {
   .pick-program {
-    min-height: 855px;
-    padding-top: 16px;
+    min-height: 858px;
+    position: relative;
+    padding-top: 48px;
   }
 
-  .pick-program__background-wrapper {
-    width: 708px;
-    background-image: none;
-    background-color: #ffffff;
+  .pick-program__img {
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 709px;
+    height: 609px;
   }
 
   .pick-program__title {
@@ -80,7 +61,7 @@
     line-height: 60px;
     width: 427px;
     text-align: left;
-    margin-left: 67px;
+    margin-left: 87px;
     margin-right: 0;
     margin-bottom: 40px;
   }
@@ -91,50 +72,47 @@
     color: #111111;
     text-align: left;
     width: 295px;
-    margin-left: 70px;
-    margin-bottom: 73px;
-  }
-
-  .pick-program__btn-wrapper {
-    position: relative;
+    margin-left: 87px;
+    margin-bottom: 45px;
   }
 
   .pick-program__btn {
-    position: absolute;
-    top: -243px;
-    left: -105px;
-    margin: 0;
     font-size: 20px;
     padding-top: 17px;
     padding-bottom: 17px;
     padding-left: 22px;
     padding-right: 22px;
+    margin: 0;
+    margin-left: 90px;
     width: 245px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .pick-program {
-    min-height: 682px;
+    min-height: 651px;
     padding-top: 98px;
-    margin-left: 41px;
-  }
-
-  .pick-program__background-wrapper {
-    width: 1300px;
   }
 
   .pick-program__title {
-    margin-left: 80px;
     margin-bottom: 41px;
+    margin-left: 80px;
   }
 
   .pick-program__slogan {
+    margin-bottom: 54px;
     margin-left: 80px;
-    margin-bottom: 78px;
+  }
+
+  .pick-program__img {
+    width: 552px;
+    height: 499px;
+    bottom: unset;
+    top: 20px;
+    transform: translateX(-160px);
   }
 
   .pick-program__btn {
-    left: -390px;
+    margin-left: 80px;
   }
 }
