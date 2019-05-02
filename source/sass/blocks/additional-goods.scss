@@ -87,7 +87,7 @@
   .additional-goods__main-title {
     font-size: 36px;
     line-height: 36px;
-    margin-left: 37px;
+    padding-left: 37px;
     margin-bottom: 46px;
     border-bottom: none;
 
@@ -102,12 +102,12 @@
 
     &::before {
       width: 30px;
-      left: -65px;
+      left: -28px;
     }
 
     &::after {
       width: 327px;
-      right: -35px;
+      right: -25px;
     }
   }
 
