@@ -12,8 +12,10 @@
     background-size: cover;
     width: 320px;
     height: 306px;
-    left: 50%;
-    transform: translateX(-50%);
+    // left: 50%;
+    right: 50%;
+    -webkit-transform: translateX(50%);-ms-transform: translateX(50%);transform: translateX(50%);
+
     z-index: -1;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -87,9 +89,10 @@ a[href].page-header__logo img {
     &--index {
       &::after {
         display: block;
-        width: calc(50% + 1px);
+        width: 50%;
         height: 696px;
         left: unset;
+
         right: 0;
         top: 0;
         transform: unset;
@@ -97,11 +100,7 @@ a[href].page-header__logo img {
         background-position-x: right;
 
         @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-          .page-header {
-            &::after {
-              background-image: url("../img/index-background-desktop@2x.jpg");
-            }
-          }
+          background-image: url("../img/index-background-desktop@2x.jpg");
         }
       }
 
