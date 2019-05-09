@@ -38,7 +38,7 @@
   }
 
   &--slim::before {
-    background-image: url("../img/icon-cat-slim.svg");
+    background-image: url("../img/cat-slim.svg");
     width: 35px;
     height: 49px;
     left: 10px;
@@ -46,7 +46,7 @@
   }
 
   &--gain::before {
-    background-image: url("../img/icon-cat-pro.svg");
+    background-image: url("../img/cat-pro.svg");
     width: 67px;
     height: 28px;
     left: -10px;
@@ -80,14 +80,14 @@
     height: 11px;
     top: 12px;
     right: 5px;
-    background-image: url("../img/icon-right-arrow-long.svg");
+    background-image: url("../img/right-arrow-long.svg");
     background-repeat: no-repeat;
   }
 
   &:hover::after {
     width: 33px;
     right: -4px;
-    background-image: url("../img/icon-right-arrow-verylong.svg");
+    background-image: url("../img/right-arrow-verylong.svg");
   }
 
   &:active {
