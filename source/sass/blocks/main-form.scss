@@ -1,8 +1,5 @@
 .main-form {
   padding-bottom: 35px;
-  width: 320px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .main-form__fieldset {
@@ -17,7 +14,7 @@
 }
 
 .main-form__fieldset--info {
-  padding-bottom: 20px;
+  padding-bottom: 8px;
 }
 
 .main-form__cat-info-list {
@@ -38,6 +35,7 @@
 
 .main-form__cat-info-item {
   display: flex;
+  margin-bottom: 5px;
 }
 
 .main-form__label-text {
@@ -65,7 +63,8 @@
 }
 
 .main-form__fieldset--goal {
-  padding-top: 20px;
+  padding-top: 11px;
+  padding-bottom: 6px;
 }
 
 .main-form__cat-goal-list {
@@ -193,18 +192,37 @@
   font-weight: $regular-font-weight;
   line-height: 24px;
   color: #111111;
-  padding-top: 15px;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
+  margin-top: 0;
+}
+
+.main-form__fieldset--contacts {
+  margin-top: 28px;
+  padding-bottom: 13px;
 }
 
 .main-form__cat-contacts-list {
   margin: 0;
   padding: 0;
+  display: flex;
 }
 
 .main-form__cat-contacts-item {
-  display: flex;
   position: relative;
+  margin-bottom: 5px;
+  display: flex;
+}
+
+h3.main-form__legend-title {
+  margin-bottom: 33px;
+}
+
+.main-form__cat-comment {
+  padding-bottom: 13px;
+}
+
+.main-form__fieldset--extra .main-form__legend-title {
+  margin-bottom: 27px;
 }
 
 .main-form__cat-extra-list {
@@ -212,25 +230,272 @@
   margin-top: 10px;
   margin-bottom: 35px;
   padding: 0;
-  // margin-left: 45px;
-  // padding-left: 45px;
   list-style-type: none;
   text-transform: uppercase;
 }
 
 .main-form__cat-extra-item {
-  margin-bottom: 20px;
+  margin-bottom: 12px;
   padding-left: 45px;
   padding-top: 3px;
   padding-bottom: 3px;
 }
 
+.main-form__btn {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
 .main-form__required {
   display: block;
   text-align: center;
-  width: 240px;
+  width: 280px;
   margin-top: 17px;
   font-family: $text-font-family;
   font-size: 14px;
   color: #444444;
+}
+
+@media (min-width: $tablet-width) {
+  .main-form {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .main-form__cat-info-item,
+  .main-form__cat-goal-item,
+  .main-form__cat-contacts-item,
+  .main-form__cat-user-comment {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .main-form__cat-info-item {
+    margin-bottom: 10px;
+  }
+
+  .main-form__input-text,
+  .main-form__cat-user-comment {
+    padding-top: 20px;
+    padding-bottom: 12px;
+
+    &::placeholder {
+      font-size: 20px;
+      line-height: 20px;
+    }
+  }
+
+  .main-form__fieldset {
+    &--info,
+    &--goal {
+      border-bottom: none;
+    }
+  }
+
+  .main-form__fieldset--info {
+    padding-bottom: 50px;
+  }
+
+  .main-form__cat-goal-item {
+    padding-bottom: 13px;
+  }
+
+  .main-form__fieldset--goal {
+    border: 1px solid #ededed;
+    padding-left: 25px;
+    margin-bottom: 80px;
+    padding-top: 22px;
+    padding-bottom: 0;
+  }
+
+  .main-form__cat-goal-label {
+    padding-left: 10px;
+  }
+
+  .main-form__cat-goal-input + .main-form__cat-goal-label,
+  .main-form__cat-extra-input + .main-form__cat-extra-label {
+    &::before {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  .main-form__cat-goal-input:checked + .main-form__cat-goal-label::after {
+    content: "";
+    width: 18px;
+    height: 18px;
+    top: 8px;
+    left: -34px;
+  }
+
+  .main-form__fieldset--contacts {
+    padding-bottom: 40px;
+  }
+
+  .main-form__cat-contacts-item {
+    margin-bottom: 12px;
+  }
+
+  .main-form__legend-title {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 80px;
+    position: relative;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      height: 3px;
+      background-color: $main-color;
+      top: 22px;
+    }
+
+    &::before {
+      width: 30px;
+      left: -70px;
+    }
+
+    &::after {
+      width: 137px;
+      right: -175px;
+    }
+  }
+
+  .main-form__cat-comment {
+    margin-bottom: 37px;
+  }
+
+  .main-form__cat-comment .main-form__legend-title {
+    margin-bottom: 70px;
+
+    &::after {
+      width: 500px;
+      right: 0;
+    }
+  }
+
+  .main-form__cat-user-comment {
+    min-height: 180px;
+  }
+
+  .main-form__fieldset--extra .main-form__legend-title {
+    margin-bottom: 54px;
+
+    &::after {
+      width: 440px;
+      right: -470px;
+    }
+  }
+
+  .main-form__cat-extra-label {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .main-form__cat-extra-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+
+  .main-form__cat-extra-item {
+    width: 280px;
+    margin-bottom: 40px;
+
+    &:nth-child(odd) {
+      margin-right: 60px;
+    }
+  }
+
+  .main-form__btn-required-wrapper {
+    display: flex;
+  }
+
+  .main-form__btn {
+    width: 282px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-form {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .main-form__label-text {
+    margin-right: 22px;
+  }
+
+  .page-form__form-info-goal-wrapper {
+    padding-bottom: 31px;
+  }
+
+  .main-form__fieldset--info,
+  .main-form__fieldset--goal {
+    width: 570px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .main-form__cat-info-item {
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .main-form__input-text {
+    padding-top: 20px;
+  }
+
+  .main-form__fieldset--goal {
+    padding-top: 15px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  .main-form__cat-goal-item {
+    margin-bottom: 15px;
+  }
+
+  .main-form__cat-contacts-list {
+    justify-content: space-between;
+  }
+
+  .main-form__cat-contacts-item {
+    width: 570px;
+  }
+
+  .main-form__cat-comment {
+    margin-bottom: 41px;
+  }
+
+  .main-form__cat-extra-list {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+  }
+
+  .main-form__cat-extra-list .main-form__cat-extra-item {
+    width: 245px;
+    padding-left: 55px;
+    justify-content: space-between;
+    margin-right: 0;
+  }
+
+  .main-form__cat-extra-input + .main-form__cat-extra-label {
+    &::before {
+      top: -5px;
+      left: -57px;
+    }
+  }
+
+  .main-form__btn {
+    width: 570px;
+    margin-right: 20px;
+  }
 }
