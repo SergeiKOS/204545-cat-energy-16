@@ -204,7 +204,6 @@
 .main-form__cat-contacts-list {
   margin: 0;
   padding: 0;
-  display: flex;
 }
 
 .main-form__cat-contacts-item {
@@ -317,6 +316,8 @@ h3.main-form__legend-title {
     &::before {
       width: 40px;
       height: 40px;
+      left: -60px;
+      top: -5px;
     }
   }
 
@@ -370,8 +371,8 @@ h3.main-form__legend-title {
     margin-bottom: 70px;
 
     &::after {
-      width: 500px;
-      right: 0;
+      width: 479px;
+      right: -70px;
     }
   }
 
@@ -402,6 +403,7 @@ h3.main-form__legend-title {
   .main-form__cat-extra-item {
     width: 280px;
     margin-bottom: 40px;
+    padding-left: 60px;
 
     &:nth-child(odd) {
       margin-right: 60px;
@@ -463,11 +465,27 @@ h3.main-form__legend-title {
   }
 
   .main-form__cat-contacts-list {
+    display: flex;
     justify-content: space-between;
   }
 
   .main-form__cat-contacts-item {
     width: 570px;
+  }
+
+  .main-form__legend-title {
+    &::after {
+      width: 692px;
+      right: -727px;
+    }
+  }
+
+  .main-form__cat-comment .main-form__legend-title {
+    &::after {
+      top: 24px;
+      width: 1025px;
+      right: -22px;
+    }
   }
 
   .main-form__cat-comment {
@@ -485,6 +503,14 @@ h3.main-form__legend-title {
     padding-left: 55px;
     justify-content: space-between;
     margin-right: 0;
+  }
+
+  .main-form__fieldset--extra .main-form__legend-title {
+    &::after {
+      top: 22px;
+      width: 993px;
+      right: -1028px;
+    }
   }
 
   .main-form__cat-extra-input + .main-form__cat-extra-label {
