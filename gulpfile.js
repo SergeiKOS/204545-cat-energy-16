@@ -10,14 +10,13 @@ var server = require("browser-sync").create();
 var wait = require("gulp-wait"); // для правильной работы VS Code
 var csso = require("gulp-csso");
 var rename = require("gulp-rename");
-var imagemin = require("gulp-imagemin");
+var imagemin = require('gulp-imagemin');
 var webp = require("gulp-webp");
 var svgstore = require("gulp-svgstore");
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var del = require("del");
 var htmlmin = require('gulp-htmlmin');
-var uglify = require('gulp-uglify');
 var pipeline = require('readable-stream').pipeline;
 
 gulp.task("css", function () {
@@ -73,7 +72,6 @@ gulp.task("html", function () {
 gulp.task('javascript', function () {
   return pipeline(
     gulp.src("source/js/*.js"),
-    uglify(),
     gulp.dest("build/js")
   );
 });
@@ -106,6 +104,7 @@ gulp.task("server", function () {
   gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css"));
   gulp.watch("source/img/icon-*.svg", gulp.series("sprite", "html", "refresh"));
   gulp.watch("source/*.html", gulp.series("html", "refresh"));
+  gulp.watch("source/js/*.js", gulp.series("javascript", "refresh"));
 });
 
 gulp.task("refresh", function (done) {
@@ -113,5 +112,5 @@ gulp.task("refresh", function (done) {
   done();
 });
 
-gulp.task("build", gulp.series("clean", "copy", "css", "sprite", "html", "javascript"));
+gulp.task("build", gulp.series("clean", "copy", "css", /*"images",*/ "sprite", "html", "javascript"));
 gulp.task("start", gulp.series("build", "server"));
