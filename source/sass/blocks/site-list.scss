@@ -32,10 +32,6 @@
   &--active {
     cursor: default;
     position: relative;
-
-    &:hover {
-      color: rgba(#111111, 1);
-    }
   }
 }
 
@@ -72,6 +68,7 @@
       height: 2px;
       bottom: -10px;
       left: 0;
+      width: 100%;
     }
   }
 }
@@ -92,6 +89,12 @@
 
     &:not(&--active):active {
       color: rgba(#111111, 0.3);
+    }
+  }
+
+  .page-header--index .site-list__item-link {
+    &--active::after {
+      background-color: #ffffff;
     }
   }
 }
