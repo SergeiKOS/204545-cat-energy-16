@@ -12,8 +12,8 @@
     background-size: cover;
     width: 320px;
     height: 306px;
-    left: 50%;
-    transform: translateX(-50%);
+    right: 50%;
+    transform: translateX(50%);
     z-index: -1;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -89,10 +89,10 @@ a[href].page-header__logo img {
         display: block;
         width: calc(50% + 1px);
         height: 696px;
-        left: unset;
+        // left: unset;
         right: 0;
         top: 0;
-        transform: unset;
+        transform: translateX(0);
         background-image: url("../img/index-background-desktop@1x.jpg");
         background-position-x: right;
 
