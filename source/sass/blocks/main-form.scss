@@ -118,7 +118,6 @@
 }
 
 .main-form__cat-goal-input:checked + .main-form__cat-goal-label {
-
   &::after {
     content: "";
     position: absolute;
@@ -129,9 +128,7 @@
     background-color: $main-color;
     border-radius: 50%;
   }
-}
 
-.main-form__cat-goal-input:checked + .main-form__cat-goal-label {
   &:active::after {
     background-color: #d1e9c3;
   }
@@ -340,7 +337,6 @@ h3.main-form__legend-title {
   }
 
   .main-form__cat-goal-input:checked + .main-form__cat-goal-label {
-
     &::after {
       content: "";
       width: 18px;
@@ -496,13 +492,12 @@ h3.main-form__legend-title {
   }
 
   .main-form__cat-goal-input + .main-form__cat-goal-label {
-
     &::before {
       top: -5px;
     }
   }
-  .main-form__cat-goal-input:checked + .main-form__cat-goal-label {
 
+  .main-form__cat-goal-input:checked + .main-form__cat-goal-label {
     &::after {
       top: 6px;
     }
@@ -530,7 +525,6 @@ h3.main-form__legend-title {
   }
 
   .main-form__cat-comment .main-form__legend-title {
-
     &::after {
       top: 24px;
       width: 1025px;

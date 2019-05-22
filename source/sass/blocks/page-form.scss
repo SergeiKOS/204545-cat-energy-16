@@ -57,15 +57,12 @@
 
   .page-form__form-info-goal-wrapper {
     padding-bottom: 35px;
+    display: flex;
+    justify-content: space-between;
   }
 
   .page-form__form-description {
     margin-left: 0;
     margin-bottom: 68px;
-  }
-
-  .page-form__form-info-goal-wrapper {
-    display: flex;
-    justify-content: space-between;
   }
 }
