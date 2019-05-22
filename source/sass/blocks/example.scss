@@ -136,6 +136,7 @@
 @media (min-width: $desktop-width) {
   .example {
     background: linear-gradient(to bottom, #ffffff 0%, #ffffff 179px, $main-color-background 180px, $main-color-background 100%);
+    padding-bottom: 0;
   }
 
   .example__wrapper {
@@ -162,12 +163,13 @@
   }
 
   .example__results--second {
-    margin-bottom: 40px;
+    margin-bottom: 0;
   }
 
   .example__expenses {
     width: 570px;
     text-align: left;
+    margin-top: 0;
 
     &--price {
       margin-left: 60px;

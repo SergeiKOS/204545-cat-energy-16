@@ -22,7 +22,6 @@
     padding-right: 30px;
     margin-bottom: 26px;
     padding-bottom: 0;
-    padding-top: 10px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -30,11 +29,15 @@
   .page-catalog__wrapper {
     display: flex;
     flex-wrap: wrap;
-    padding-bottom: 37px;
+    padding-bottom: 45px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .page-catalog__wrapper {
+    padding-bottom: 34px;
+  }
+
   .page-catalog__big-title {
     width: 1220px;
     padding-right: 40px;

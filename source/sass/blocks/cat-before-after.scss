@@ -60,17 +60,19 @@
 @media (min-width: $tablet-width) {
   .cat-before-after {
     background-color: #f2f2f2;
-    padding-bottom: 73px;
-    min-height: 700px;
+    padding-bottom: 70px;
   }
 
   .cat-before-after__img-before {
     width: 690px;
+    margin-left: 17px;
+    margin-top: 65px;
+    margin-bottom: 20px;
   }
 
   .cat-before-after-controls-wrapper {
-    width: 580px;
-    padding-left: 0;
+    width: 680px;
+    padding-left: 70px;
   }
 
   .cat-before-after-btn {
@@ -81,11 +83,11 @@
   }
 
   .cat-before-after__after {
-    margin-left: 12px;
+    margin-left: 23px;
   }
 
   .cat-before-after__before {
-    margin-right: 12px;
+    margin-right: 23px;
   }
 
   .cat-before-after__range {
@@ -93,7 +95,7 @@
     height: 6px;
     background-color: #dcdcdc;
     border-radius: 2.5px;
-    margin-right: 0;
+    margin-right: 0px;
   }
 
   .cat-before-after__range-progress {
@@ -137,7 +139,25 @@
 @media (min-width: $desktop-width) {
   .cat-before-after {
     min-height: auto;
-    margin-top: -434px;
-    background: linear-gradient(to bottom, #ffffff 0%, #ffffff 192px, $main-color-background 193px, $main-color-background 100%);
+    margin-left: 80px;
+    margin-top: -500px;
+    background: linear-gradient(to bottom, #ffffff 0%, #ffffff 259px, $main-color-background 260px, $main-color-background 100%);
+  }
+
+  .cat-before-after__img-before {
+    margin-bottom: 40px;
+    margin-left: -80px;
+  }
+
+  .cat-before-after-controls-wrapper {
+    padding-left: 0;
+  }
+
+  .cat-before-after__after {
+    margin-left: 22px;
+  }
+
+  .cat-before-after__before {
+    margin-right: 22px;
   }
 }

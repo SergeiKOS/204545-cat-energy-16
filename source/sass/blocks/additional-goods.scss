@@ -147,6 +147,8 @@
     min-height: 200px;
     margin-bottom: 70px;
     margin-top: 70px;
+    background-position: center center;
+    background-size: cover;
   }
 
   .additional-goods__promo-text {
@@ -174,9 +176,16 @@
     padding-bottom: 80px;
     margin-left: 0;
     margin-bottom: 0;
+    padding-left: 0;
 
     &::after {
       width: 880px;
+      right: -33px;
+    }
+
+    &::before {
+      width: 40px;
+      left: -80px;
     }
   }
 

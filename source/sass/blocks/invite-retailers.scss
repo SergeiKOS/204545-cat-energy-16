@@ -32,13 +32,16 @@
 
 @media (min-width: $tablet-width) {
   .invite-retailers {
-    padding-top: 45px;
+    padding-top: 17px;
+  }
+
+  .page-main .invite-retailers {
+    background-color: #ffffff;
   }
 
   .invite-retailers__wrapper {
     justify-content: space-between;
-    padding-top: 5px;
-    padding-bottom: 50px;
+    padding-bottom: 40px;
     padding-left: 40px;
     padding-right: 40px;
     width: 708px;
@@ -73,10 +76,10 @@
     width: auto;
     position: absolute;
     background-color: #ffffff;
-    padding-top: 48px;
+    padding-top: 46px;
     padding-left: 75px;
     top: 95px;
-    left: 138px;
+    left: 110px;
   }
 
   .invite-retailers__title {
