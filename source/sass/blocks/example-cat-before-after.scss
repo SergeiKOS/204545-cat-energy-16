@@ -1,3 +1,13 @@
+.example-cat-before-after {
+  background-color: $main-color-background;
+}
+
+@media (min-width: $tablet-width) {
+  .example-cat-before-after {
+    background-color: #ffffff;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .example-cat-before-after {
     background: linear-gradient(to bottom, #ffffff 0%, #ffffff 179px, $main-color-background 180px, $main-color-background 100%);

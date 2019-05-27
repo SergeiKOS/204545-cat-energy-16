@@ -3,8 +3,12 @@
   padding-top: 14px;
 
   &--mobile {
-    background-color: $main-color-background;
+    background-color: #ffffff;
   }
+}
+
+.invite-retailers--mobile.invite-retailers--catalog {
+  background-color: $main-color-background;
 }
 
 .invite-retailers__wrapper {
