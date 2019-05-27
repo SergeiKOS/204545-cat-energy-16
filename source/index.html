@@ -85,25 +85,32 @@
         </div>
       </section>
 
-      <section class="example">
-        <div class="example__wrapper container">
-          <h2 class="big-title example__big-title">Живой пример</h2>
-          <p class="standart-text example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-          <div class="example__desktop__wrapper">
-            <div class="example__results-expenses-wrapper">
-              <div class="example__results-wrapper">
-                <div class="example__results">
-                  <span class="example__results-fact">5 кг</span>
-                  <span class="example__results-description">Снижение веса</span>
-                </div>
-                <div class="example__results example__results--second">
-                  <span class="example__results-fact">60 дней</span>
-                  <span class="example__results-description">Затрачено времени</span>
+      <div class="example-cat-before-after">
+        <div class="example-cat-before-after__wrapper container">
+          <section class="example">
+            <div class="example__wrapper">
+              <h2 class="big-title example__big-title">Живой пример</h2>
+              <p class="standart-text example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+              <div class="example__desktop__wrapper">
+                <div class="example__results-expenses-wrapper">
+                  <div class="example__results-wrapper">
+                    <div class="example__results">
+                      <span class="example__results-fact">5 кг</span>
+                      <span class="example__results-description">Снижение веса</span>
+                    </div>
+                    <div class="example__results example__results--second">
+                      <span class="example__results-fact">60 дней</span>
+                      <span class="example__results-description">Затрачено времени</span>
+                    </div>
+                  </div>
+                  <p class="example__expenses">Затраты на питание: <span class="example__expenses-price">15 000 руб.</span></p>
                 </div>
               </div>
-              <p class="example__expenses">Затраты на питание: <span class="example__expenses--price">15 000 руб.</span></p>
             </div>
-            <div class="example__cat-before-after cat-before-after">
+          </section>
+
+          <section class="cat-before-after">
+            <div class="cat-before-after__wrapper">
               <picture>
                 <source type="image/webp" media="(min-width: 1300px)" srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
@@ -121,14 +128,35 @@
                 <button class="cat-before-after-btn cat-before-after__after" type="button">Стало</button>
               </div>
             </div>
-          </div>
+          </section>
         </div>
-      </section>
+      </div>
+
+      <section class="cat-before-after-tablet">
+          <div class="cat-before-after__wrapper">
+            <picture>
+              <source type="image/webp" media="(min-width: 1300px)" srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
+
+              <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
+              <img class="cat-before-after__img-before" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="Борис до">
+            </picture>
+            <div class="cat-before-after-controls-wrapper">
+              <button class="cat-before-after-btn cat-before-after__before" type="button">Было</button>
+              <div class="cat-before-after__range">
+                <div class="cat-before-after__range-progress"></div>
+              </div>
+              <button class="cat-before-after-btn cat-before-after__after" type="button">Стало</button>
+            </div>
+          </div>
+        </section>
 
       <div class="invite-retailers-and-map">
-        <section class="invite-retailers invite-retailers--mobile">
+        <section class="invite-retailers invite-retailers--mobile invite-retailers--index">
           <div class="invite-retailers__wrapper">
-            <h2 class="invite-retailers__title">Приглашаем к сотрудничеству дилеров!</h2>
+            <h2 class="invite-retailers__title">Приглашаем<br>к сотрудничеству дилеров!</h2>
             <p class="standart-text invite-retailers__address">ул. Большая Конюшенная, д. 19/8 <span class="invite-retailers__address--tablet-space">Санкт-Петербург</span></p>
           </div>
         </section>
@@ -151,7 +179,7 @@
           <ul class="social__list">
             <li class="social__item">
               <a class="social-link social-link--vk" href="https://vk.com" target="_blank" rel="nofollow noopener">
-                <svg class="vk-svg" width="16" height="16"><use xlink:href="#icon-vk"></use></svg>
+                <svg class="vk-svg" width="22" height="12"><use xlink:href="#icon-vk"></use></svg>
                 <span class="visually-hidden">Facebook</span>
               </a>
             </li>
@@ -163,7 +191,7 @@
             </li>
             <li class="social__item">
               <a class="social-link social-link--facebook" href="https://facebook.com" target="_blank" rel="nofollow noopener">
-                <svg class="facebook-svg" width="16" height="16"><use xlink:href="#icon-fb"></use></svg>
+                <svg class="facebook-svg" width="10" height="19"><use xlink:href="#icon-fb"></use></svg>
                 <span class="visually-hidden">Facebook</span>
               </a>
             </li>

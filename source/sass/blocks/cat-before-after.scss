@@ -1,8 +1,12 @@
+.cat-before-after {
+  padding-bottom: 30px;
+}
+
 .cat-before-after__img-before {
   width: 320px;
   display: block;
   margin-left: -20px;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
 }
 
 .cat-before-after-controls-wrapper {
@@ -36,7 +40,7 @@
 }
 
 .cat-before-after__before {
-  margin-right: 15px;
+  margin-right: 21px;
 }
 
 .cat-before-after__range {
@@ -46,6 +50,7 @@
   border-radius: 6px;
   border: 1px solid #cdcdcd;
   margin-right: 15px;
+  margin-top: -3px;
   padding-top: 3px;
 }
 
@@ -57,16 +62,27 @@
   margin-left: 5px;
 }
 
+.cat-before-after-tablet {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .cat-before-after {
-    background-color: #f2f2f2;
+    width: 100%;
     padding-bottom: 70px;
+    background: linear-gradient(to bottom, #ffffff 0%, #ffffff 169px, $main-color-background 170px, $main-color-background 100%);
+  }
+
+  .cat-before-after__wrapper {
+    width: 712px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .cat-before-after__img-before {
     width: 690px;
     margin-left: 17px;
-    margin-top: 65px;
+    margin-top: 35px;
     margin-bottom: 20px;
   }
 
@@ -105,7 +121,7 @@
     background-color: #ffffff;
     width: 34px;
     height: 34px;
-    margin-top: -15px;
+    margin-top: -19px;
     margin-left: 200px;
     cursor: pointer;
     position: relative;
@@ -136,21 +152,39 @@
   }
 }
 
+@media (min-width: $tablet-width) and (max-width: 1299px) {
+  .cat-before-after-tablet {
+    display: block;
+    background: linear-gradient(to bottom, #ffffff 0%, #ffffff 169px, $main-color-background 170px, $main-color-background 100%);
+    padding-bottom: 68px;
+  }
+
+  .cat-before-after {
+    display: none;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .cat-before-after {
     min-height: auto;
-    margin-left: 80px;
-    margin-top: -500px;
-    background: linear-gradient(to bottom, #ffffff 0%, #ffffff 259px, $main-color-background 260px, $main-color-background 100%);
+    // margin-left: 80px;
+    // margin-top: -500px;
+    background: linear-gradient(to bottom, #ffffff 0%, #ffffff 180px, $main-color-background 181px, $main-color-background 100%);
+  }
+
+  .cat-before-after__wrapper {
+    margin-top: -47px;
+    margin-left: -17px;
   }
 
   .cat-before-after__img-before {
     margin-bottom: 40px;
-    margin-left: -80px;
+    // margin-left: -80px;
   }
 
   .cat-before-after-controls-wrapper {
     padding-left: 0;
+    margin-left: 96px;
   }
 
   .cat-before-after__after {

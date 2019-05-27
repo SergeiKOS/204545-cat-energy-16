@@ -17,11 +17,7 @@
     z-index: -1;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      .page-header {
-        &::after {
-          background-image: url("../img/index-background-mobile@2x.jpg");
-        }
-      }
+      background-image: url("../img/index-background-mobile@2x.jpg");
     }
   }
 }
@@ -37,9 +33,6 @@
 }
 
 a[href].page-header__logo img {
-  width: 195px;
-  height: 50px;
-
   &:hover {
     opacity: 0.8;
   }
@@ -67,6 +60,7 @@ a[href].page-header__logo img {
 @media (min-width: $tablet-width) {
   .page-header {
     border-bottom: none;
+    padding-top: 24px;
 
     &--index::after {
       display: none;
@@ -93,7 +87,6 @@ a[href].page-header__logo img {
         display: block;
         width: calc(50% + 1px);
         height: 696px;
-        // left: unset;
         right: 0;
         top: 0;
         transform: translateX(0);

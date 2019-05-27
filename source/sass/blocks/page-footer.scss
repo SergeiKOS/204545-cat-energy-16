@@ -4,7 +4,7 @@
 
 .page-footer__company-name {
   padding-top: 28px;
-  padding-bottom: 12px;
+  padding-bottom: 17px;
   text-align: center;
   display: block;
 }
@@ -34,11 +34,17 @@ a[href].page-footer__company-name img {
   align-items: center;
 }
 
+.copyright__name {
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .page-footer__wrapper {
     display: flex;
     align-items: center;
-    padding-top: 70px;
+    padding-top: 40px;
     padding-bottom: 40px;
   }
 
@@ -50,24 +56,28 @@ a[href].page-footer__company-name img {
   .page-footer__social {
     width: 324px;
     margin-right: 30px;
-    margin-left: 60px;
+    margin-left: 83px;
     border: none;
   }
 
   .page-footer__copyright {
-    width: 162px;
+    width: 175px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-footer__wrapper {
-    padding-top: 35px;
+    padding-top: 39px;
   }
 
   .page-footer__social {
     width: 324px;
     margin-right: 350px;
-    margin-left: 330px;
+    margin-left: 338px;
     border: none;
+  }
+
+  .copyright__name {
+    margin-left: 30px;
   }
 }

@@ -57,9 +57,9 @@
     outline: 2px solid #444444;
   }
 
-  &:focus + .main-form__input-text--email,
-  &:focus + .main-form__input-text--tel {
-    fill: $main-color;
+  &:focus + .main-form__input-text-email,
+  &:focus + .main-form__input-text-tel {
+    color: $main-color;
   }
 }
 
@@ -134,17 +134,21 @@
   }
 }
 
-.main-form__input-text--email {
+.main-form__cat-goal-input:focus + .main-form__cat-goal-label {
+  border-bottom: 1px solid $main-color;
+}
+
+.main-form__input-text-email {
   position: absolute;
   top: 16px;
   right: 20px;
 
   &:active {
-    fill: $main-color;
+    color: $main-color;
   }
 }
 
-.main-form__input-text--tel {
+.main-form__input-text-tel {
   position: absolute;
   top: 12px;
   right: 16px;
@@ -198,6 +202,17 @@
   color: #111111;
   margin-bottom: 35px;
   margin-top: 0;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    background-color: $main-color;
+    top: 15px;
+    width: 90px;
+    right: -11px;
+  }
 }
 
 .main-form__fieldset--contacts {
@@ -218,6 +233,12 @@
 
 h3.main-form__legend-title {
   margin-bottom: 33px;
+
+  &::after {
+    top: 13px;
+    width: 149px;
+    right: -11px;
+  }
 }
 
 .main-form__cat-comment {
@@ -226,6 +247,12 @@ h3.main-form__legend-title {
 
 .main-form__fieldset--extra .main-form__legend-title {
   margin-bottom: 27px;
+
+  &::after {
+    top: 15px;
+    width: 126px;
+    right: -145px;
+  }
 }
 
 .main-form__cat-extra-list {
@@ -393,6 +420,10 @@ h3.main-form__legend-title {
     }
   }
 
+  h3.main-form__legend-title::after {
+    top: 23px;
+  }
+
   .main-form__cat-user-comment {
     min-height: 170px;
   }
@@ -401,8 +432,9 @@ h3.main-form__legend-title {
     margin-bottom: 54px;
 
     &::after {
-      width: 440px;
-      right: -470px;
+      width: 446px;
+      right: -483px;
+      top: 23px;
     }
   }
 
@@ -413,7 +445,7 @@ h3.main-form__legend-title {
 
   .main-form__cat-extra-input:checked + .main-form__cat-extra-label::after {
     left: -50px;
-    top: 2px;
+    top: 8px;
   }
 
   .main-form__cat-extra-list {
@@ -489,6 +521,7 @@ h3.main-form__legend-title {
   .main-form__cat-contacts-list {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 
   .main-form__cat-goal-input + .main-form__cat-goal-label {

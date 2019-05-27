@@ -32,11 +32,26 @@
 
 @media (min-width: $tablet-width) {
   .invite-retailers {
-    padding-top: 17px;
+    &--index {
+      padding-top: 47px;
+    }
+
+    &--catalog {
+      padding-top: 37px;
+    }
+
+    &--form {
+      padding-top: 49px;
+    }
   }
 
   .page-main .invite-retailers {
     background-color: #ffffff;
+  }
+
+  .invite-retailers__address--tablet-space {
+    margin-top: 20px;
+    display: inline-block;
   }
 
   .invite-retailers__wrapper {
@@ -60,7 +75,7 @@
     text-align: right;
   }
 
-  .invite-retailers__address--tablet-space {
+  .invite-retailers__address-tablet-space {
     margin-top: 19px;
     display: inline-block;
   }
@@ -77,7 +92,7 @@
     position: absolute;
     background-color: #ffffff;
     padding-top: 46px;
-    padding-left: 75px;
+    padding-left: 137px;
     top: 95px;
     left: 110px;
   }

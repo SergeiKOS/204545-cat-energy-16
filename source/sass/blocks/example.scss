@@ -1,7 +1,7 @@
 .example {
   background-color: $main-color-background;
   padding-top: 19px;
-  padding-bottom: 30px;
+  padding-bottom: 6px;
 }
 
 .example__big-title {
@@ -25,7 +25,7 @@
 .example__results {
   display: inline-block;
   width: 125px;
-  margin-right: 13px;
+  margin-right: 18px;
   padding-top: 6px;
   text-align: center;
   border: 1px solid #cdcdcd;
@@ -42,7 +42,7 @@
   line-height: 32px;
   color: #111111;
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 3px;
 }
 
 .example__results-description {
@@ -58,6 +58,7 @@
   padding-left: 14px;
   padding-right: 14px;
   margin-bottom: -10px;
+  text-transform: lowercase;
 }
 
 .example__expenses {
@@ -72,6 +73,10 @@
 @media (min-width: $tablet-width) {
   .example {
     background-color: #ffffff;
+  }
+
+  .example__wrapper {
+    margin-bottom: 24px;
   }
 
   .example__big-title {
@@ -125,11 +130,11 @@
     line-height: 20px;
     text-align: right;
     margin-top: 10px;
+  }
 
-    &--price {
-      display: inline-block;
-      margin-top: 10px;
-    }
+  .example__expenses-price {
+    display: inline-block;
+    margin-top: 10px;
   }
 }
 
@@ -146,11 +151,15 @@
   .example__description {
     padding-top: 83px;
     width: 445px;
-    margin-bottom: 75px;
+    margin-bottom: 68px;
   }
 
   .example__desktop__wrapper {
     display: flex;
+  }
+
+  .example__results-wrapper {
+    margin-bottom: 51px;
   }
 
   .example__results-description {
@@ -176,8 +185,7 @@
     }
   }
 
-  .example__cat-before-after {
-    width: 570px;
-    margin-top: -200px;
+  .example__expenses-price {
+    margin-left: 59px;
   }
 }

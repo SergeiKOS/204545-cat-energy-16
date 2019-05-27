@@ -79,7 +79,7 @@
     width: 24px;
     height: 11px;
     top: 12px;
-    right: 5px;
+    right: 3px;
     background-image: url("../img/right-arrow-long.svg");
     background-repeat: no-repeat;
   }
@@ -112,9 +112,10 @@
     font-size: 36px;
     line-height: 37px;
     text-align: left;
-    padding-top: 39px;
+    padding-top: 36px;
     padding-left: 0;
     margin-top: 0;
+    margin-bottom: 27px;
 
     &::after {
       width: 200px;
@@ -141,11 +142,19 @@
   .program-type__description {
     width: 370px;
     border-bottom: none;
-    margin-bottom: 55px;
+    margin-bottom: 30px;
+    padding-bottom: 22px;
+    font-size: 16px;
+    line-height: 24px;
   }
 
   .program-type__btn {
     font-size: 20px;
+
+    &::after {
+      top: 14px;
+      right: -7px;
+    }
   }
 }
 

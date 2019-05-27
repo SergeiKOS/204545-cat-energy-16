@@ -12,6 +12,16 @@
   border-bottom: 1px solid #cdcdcd;
   margin: 0;
   position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    background-color: $main-color;
+    top: 15px;
+    width: 53px;
+    right: -20px;
+  }
 }
 
 .additional-goods__item {
