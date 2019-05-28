@@ -20,10 +20,13 @@
   width: 280px;
   margin-left: auto;
   margin-right: auto;
+  display: flex;
+  margin-bottom: 30px;
 }
 
 .example__results {
-  display: inline-block;
+  display: flex;
+  flex-wrap: wrap;
   width: 125px;
   margin-right: 18px;
   padding-top: 6px;
@@ -42,6 +45,8 @@
   line-height: 32px;
   color: #111111;
   display: block;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 3px;
 }
 
@@ -68,11 +73,18 @@
   color: #111111;
   text-align: center;
   margin-bottom: 30px;
+  display: flex;
+  padding-left: 47px;
+}
+
+.example__expenses-price {
+  padding-left: 2px;
 }
 
 @media (min-width: $tablet-width) {
   .example {
     background-color: #ffffff;
+    padding-bottom: 1px;
   }
 
   .example__wrapper {
@@ -112,7 +124,8 @@
   .example__results-fact {
     font-size: 30px;
     line-height: 37px;
-    padding-top: 9px;
+    padding-top: 6px;
+    margin-bottom: 14px;
   }
 
   .example__results--second {
@@ -125,16 +138,16 @@
   }
 
   .example__expenses {
-    width: 192px;
+    width: 221px;
     font-size: 20px;
     line-height: 20px;
     text-align: right;
     margin-top: 10px;
+    flex-direction: column;
   }
 
   .example__expenses-price {
-    display: inline-block;
-    margin-top: 10px;
+    padding-top: 10px;
   }
 }
 
@@ -159,7 +172,7 @@
   }
 
   .example__results-wrapper {
-    margin-bottom: 51px;
+    margin-bottom: 65px;
   }
 
   .example__results-description {
@@ -179,6 +192,8 @@
     width: 570px;
     text-align: left;
     margin-top: 0;
+    flex-direction: row;
+    padding-left: 0;
 
     &--price {
       margin-left: 60px;
@@ -187,5 +202,6 @@
 
   .example__expenses-price {
     margin-left: 59px;
+    padding-top: 0;
   }
 }

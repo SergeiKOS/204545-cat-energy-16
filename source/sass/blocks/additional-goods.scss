@@ -12,15 +12,26 @@
   border-bottom: 1px solid #cdcdcd;
   margin: 0;
   position: relative;
+  display: inline-flex;
+  padding-right: 22px;
 
+  &::before,
   &::after {
     content: "";
     position: absolute;
+    display: inline-flex;
     height: 3px;
     background-color: $main-color;
     top: 15px;
-    width: 53px;
-    right: -20px;
+    width: 100vw;
+  }
+
+  &::before {
+    right: calc(100% + 22px);
+  }
+
+  &::after {
+    left: 100%;
   }
 }
 
@@ -100,24 +111,15 @@
     padding-left: 37px;
     margin-bottom: 46px;
     border-bottom: none;
+    padding-right: 37px;
 
     &::before,
     &::after {
-      content: "";
-      position: absolute;
-      height: 3px;
-      background-color: $main-color;
       top: 22px;
     }
 
     &::before {
-      width: 30px;
-      left: -28px;
-    }
-
-    &::after {
-      width: 327px;
-      right: -25px;
+      right: calc(100% + 2px);
     }
   }
 
@@ -182,20 +184,18 @@
   }
 
   .additional-goods__main-title {
-    width: 100%;
     padding-bottom: 80px;
     margin-left: 0;
     margin-bottom: 0;
     padding-left: 0;
 
+    &::before,
     &::after {
-      width: 880px;
-      right: -33px;
+      top: 20px;
     }
 
     &::before {
-      width: 40px;
-      left: -80px;
+      right: calc(100% + 40px);
     }
   }
 
