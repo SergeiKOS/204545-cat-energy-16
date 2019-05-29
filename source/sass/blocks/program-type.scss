@@ -140,12 +140,16 @@
   }
 
   .program-type__description {
-    width: 370px;
+    width: 372px;
     border-bottom: none;
     margin-bottom: 30px;
     padding-bottom: 22px;
     font-size: 16px;
     line-height: 24px;
+  }
+
+  .program-type__description--special-width {
+    width: 344px;
   }
 
   .program-type__btn {
