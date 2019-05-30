@@ -11,12 +11,14 @@
 }
 
 .main-nav__toggle {
-  position: relative;
   width: 70px;
   height: 50px;
   background-color: #ffffff;
   border: none;
   cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
 
   &::before {
     content: "";

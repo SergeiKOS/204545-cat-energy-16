@@ -2,13 +2,13 @@
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
-  margin-top: 12px;
+  margin-top: 15px;
   margin-bottom: 20px;
   align-items: center;
 }
 
 .social__item {
-  margin-right: 37px;
+  margin-right: 38px;
 
   &:last-child {
     margin-right: 0;
@@ -35,7 +35,7 @@
 }
 
 .social-link--vk {
-  margin-left: 29px;
+  margin-left: 33px;
 }
 
 .social-link--vk svg {
@@ -70,7 +70,7 @@
 
 @media (min-width: $tablet-width) {
   .social__item {
-    margin-right: 30px;
+    margin-right: 27px;
   }
 
   .social-link--vk svg {

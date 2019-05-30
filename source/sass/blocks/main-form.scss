@@ -1,5 +1,5 @@
 .main-form {
-  padding-bottom: 35px;
+  padding-bottom: 32px;
 }
 
 .main-form__fieldset {
@@ -35,12 +35,12 @@
 
 .main-form__cat-info-item {
   display: flex;
-  margin-bottom: 5px;
+  margin-bottom: 7px;
 }
 
 .main-form__label-text {
-  margin-right: 16px;
-  margin-top: 12px;
+  margin-right: 17px;
+  margin-top: 11px;
 }
 
 .main-form__input-text {
@@ -57,10 +57,34 @@
     outline: 2px solid #444444;
   }
 
+  &:hover + .main-form__input-text-email,
+  &:hover + .main-form__input-text-tel {
+    color: $main-color;
+  }
+
+  &:active + .main-form__input-text-email,
+  &:active + .main-form__input-text-tel {
+    opacity: 0.6;
+  }
+
   &:focus + .main-form__input-text-email,
   &:focus + .main-form__input-text-tel {
     color: $main-color;
   }
+}
+
+.main-form__input-text-email:active,
+.main-form__input-text-tel:active {
+  opacity: 0.6;
+}
+
+.main-form__input-text-email:hover,
+.main-form__input-text-tel:hover {
+  color: $main-color;
+}
+
+.main-form__input-text-svg-error {
+  color: #ff8282;
 }
 
 .main-form__fieldset--goal {
@@ -123,7 +147,7 @@
     position: absolute;
     width: 12px;
     height: 12px;
-    top: 6px;
+    top: 7px;
     left: -36px;
     background-color: $main-color;
     border-radius: 50%;
@@ -140,7 +164,7 @@
 
 .main-form__input-text-email {
   position: absolute;
-  top: 16px;
+  top: 14px;
   right: 17px;
 
   &:active {
@@ -156,8 +180,8 @@
 
 .main-form__input-text,
 .main-form__cat-user-comment {
-  padding-left: 12px;
-  padding-top: 14px;
+  padding-left: 14px;
+  padding-top: 12px;
   padding-bottom: 10px;
   padding-right: 12px;
   flex-grow: 1;
@@ -174,10 +198,15 @@
   }
 }
 
+.main-form__cat-contacts-item .main-form__input-text {
+  padding-left: 10px;
+}
+
 .main-form__cat-user-comment {
   width: 100%;
   height: 150px;
   margin-bottom: 10px;
+  padding-top: 15px;
 }
 
 .main-form__cat-extra-input + .main-form__cat-extra-label:active::after {
@@ -195,18 +224,21 @@
   background-repeat: no-repeat;
 }
 
+.main-form__cat-extra-input:focus + .main-form__cat-extra-label {
+  border-bottom: 1px solid $main-color;
+}
+
 .main-form__legend-title {
   font-size: 24px;
   font-weight: $regular-font-weight;
   line-height: 24px;
   color: #111111;
-  margin-bottom: 35px;
+  margin-bottom: 37px;
   margin-top: 0;
   position: relative;
   display: inline-flex;
   padding-right: 22px;
 
-  &::before,
   &::after {
     content: "";
     position: absolute;
@@ -215,13 +247,6 @@
     background-color: $main-color;
     top: 15px;
     width: 100vw;
-  }
-
-  &::before {
-    right: calc(100% + 22px);
-  }
-
-  &::after {
     left: 100%;
   }
 }
@@ -236,7 +261,7 @@
 
 .main-form__fieldset--contacts {
   margin-top: 28px;
-  padding-bottom: 13px;
+  padding-bottom: 15px;
 }
 
 .main-form__cat-contacts-list {
@@ -302,6 +327,7 @@ h3.main-form__legend-title {
   .main-form {
     padding-left: 40px;
     padding-right: 40px;
+    padding-bottom: 36px;
   }
 
   .main-form__cat-info-item,
@@ -313,11 +339,12 @@ h3.main-form__legend-title {
   }
 
   .main-form__cat-info-item {
-    margin-bottom: 25px;
+    margin-bottom: 22px;
   }
 
   .main-form__label-text {
     margin-right: 22px;
+    margin-top: 14px;
   }
 
   .main-form__input-text,
@@ -357,7 +384,7 @@ h3.main-form__legend-title {
   }
 
   .main-form__fieldset--info {
-    padding-bottom: 50px;
+    padding-bottom: 54px;
   }
 
   .main-form__cat-goal-list {
@@ -371,9 +398,9 @@ h3.main-form__legend-title {
   .main-form__fieldset--goal {
     border: 1px solid #ededed;
     padding-left: 44px;
-    margin-bottom: 80px;
-    padding-top: 21px;
-    padding-bottom: 0;
+    margin-bottom: 76px;
+    padding-top: 24px;
+    padding-bottom: 6px;
   }
 
   .main-form__cat-goal-input + .main-form__cat-goal-label,
@@ -411,6 +438,12 @@ h3.main-form__legend-title {
     position: relative;
 
     &::before {
+      content: "";
+      position: absolute;
+      display: inline-flex;
+      height: 3px;
+      background-color: $main-color;
+      width: 100vw;
       top: 21px;
       right: calc(100% + 40px);
     }
@@ -498,6 +531,12 @@ h3.main-form__legend-title {
     font-size: 20px;
     line-height: 20px;
   }
+
+  .main-form__required {
+    width: 305px;
+    font-size: 16px;
+    margin-top: 16px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -526,8 +565,17 @@ h3.main-form__legend-title {
   }
 
   .main-form__input-text {
-    padding-top: 10px;
+    padding-top: 8px;
     margin-bottom: 0;
+  }
+
+  .main-form__input-text-email {
+    right: 20px;
+    top: 16px;
+  }
+
+  .main-form__input-text-tel {
+    right: 19px;
   }
 
   .main-form__fieldset--goal {
@@ -589,7 +637,8 @@ h3.main-form__legend-title {
 
   .main-form__cat-goal-input:checked + .main-form__cat-goal-label {
     &::after {
-      top: 6px;
+      top: 8px;
+      left: -49px;
     }
   }
 
