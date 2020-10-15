@@ -54,12 +54,6 @@ gulp.task("images", function () {
     .pipe(gulp.dest("build/img"));
 });
 
-gulp.task("webp", function () {
-  return gulp.src("source/img/**/*.{png,jpg}")
-    .pipe(webp({quality: 90}))
-    .pipe(gulp.dest("build/img"));
-});
-
 gulp.task("sprite", function () {
   return gulp.src("source/img/icon-*.svg")
     .pipe(svgstore({
@@ -120,7 +114,6 @@ gulp.task("refresh", function (done) {
   server.reload();
   done();
 });
-
 
 gulp.task("images", function () {
   return gulp.src("source/img/**/*.{png,jpg,svg}")
