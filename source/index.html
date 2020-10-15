@@ -111,7 +111,7 @@
 
           <section class="cat-before-after">
             <div class="cat-before-after__wrapper">
-              <picture>
+              <picture class="cat-before-after__picture-before">
                 <source type="image/webp" media="(min-width: 1300px)" srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
                 <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
@@ -120,11 +120,17 @@
                 <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
                 <img class="cat-before-after__img-before" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="Борис до">
               </picture>
+              <picture class="cat-before-after__picture-after">
+                <source type="image/webp" media="(min-width: 1300px)" srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
+
+                <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
+                <img class="cat-before-after__img-before" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" alt="Борис после">
+              </picture>
               <div class="cat-before-after-controls-wrapper">
                 <button class="cat-before-after-btn cat-before-after__before" type="button">Было</button>
-                <div class="cat-before-after__range">
-                  <div class="cat-before-after__range-progress"></div>
-                </div>
                 <button class="cat-before-after-btn cat-before-after__after" type="button">Стало</button>
               </div>
             </div>
@@ -133,25 +139,31 @@
       </div>
 
       <section class="cat-before-after-tablet">
-          <div class="cat-before-after__wrapper">
-            <picture>
-              <source type="image/webp" media="(min-width: 1300px)" srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
+        <div class="cat-before-after__wrapper">
+          <picture class="cat-before-after__picture-before--tablet">
+            <source type="image/webp" media="(min-width: 1300px)" srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
 
-              <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
-              <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
-              <img class="cat-before-after__img-before" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="Борис до">
-            </picture>
-            <div class="cat-before-after-controls-wrapper">
-              <button class="cat-before-after-btn cat-before-after__before" type="button">Было</button>
-              <div class="cat-before-after__range">
-                <div class="cat-before-after__range-progress"></div>
-              </div>
-              <button class="cat-before-after-btn cat-before-after__after" type="button">Стало</button>
-            </div>
+            <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
+            <img class="cat-before-after__img-before" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="Борис до">
+          </picture>
+          <picture class="cat-before-after__picture-after--tablet">
+            <source type="image/webp" media="(min-width: 1300px)" srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
+
+            <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
+            <img class="cat-before-after__img-before" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" alt="Борис после">
+          </picture>
+          <div class="cat-before-after-controls-wrapper">
+            <button class="cat-before-after-btn cat-before-after__before cat-before-after__before--tablet" type="button">Было</button>
+            <button class="cat-before-after-btn cat-before-after__after cat-before-after__after--tablet" type="button">Стало</button>
           </div>
-        </section>
+        </div>
+      </section>
 
       <div class="invite-retailers-and-map">
         <div class="invite-retailers__desktop-wrapper">
@@ -209,5 +221,6 @@
     </footer>
 
     <script src="js/main-nav-toggle.js"></script>
+    <script src="js/beforeAfterHandlers.js"></script>
   </body>
 </html>

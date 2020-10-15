@@ -2,6 +2,11 @@
   padding-bottom: 30px;
 }
 
+.cat-before-after__picture-after,
+.cat-before-after__picture-after--tablet {
+  display: none;
+}
+
 .cat-before-after__img-before {
   width: 320px;
   display: block;
@@ -12,7 +17,7 @@
 .cat-before-after-controls-wrapper {
   display: flex;
   align-items: center;
-  padding-left: 40px;
+  justify-content: center;
   width: 280px;
 }
 
@@ -34,8 +39,8 @@
     border-bottom: 1px solid #989898;
   }
 
-  &:active {
-    border-bottom: none;
+  &--active {
+    cursor: auto;
   }
 }
 
@@ -88,7 +93,6 @@
 
   .cat-before-after-controls-wrapper {
     width: 680px;
-    padding-left: 70px;
   }
 
   .cat-before-after-btn {
@@ -182,7 +186,6 @@
 
   .cat-before-after-controls-wrapper {
     padding-left: 0;
-    margin-left: 96px;
   }
 
   .cat-before-after__after {

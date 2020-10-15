@@ -7,6 +7,7 @@ var siteList = document.querySelector('.site-list');
 pageHeaderWrapper.classList.remove('page-header__wrapper--nojs');
 
 mainNavToggle.addEventListener('click', function() {
+  console.log('clicked');
   if (mainNavToggle.classList.contains('main-nav__toggle--closed')) {
     mainNavToggle.classList.remove('main-nav__toggle--closed');
     siteList.style.display = 'none';
