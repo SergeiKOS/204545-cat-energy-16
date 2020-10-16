@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Форма CAT ENERGY</title>
+    <title>Application CAT ENERGY</title>
     <link rel="preload" href="/fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="/fonts/oswaldmedium.woff2" as="font" crossorigin="anonymous">
     <script>
@@ -28,12 +28,12 @@
         </a>
         <nav class="main-nav">
           <button class="main-nav__toggle" type="button">
-            <span class="visually-hidden">Открыть меню</span>
+            <span class="visually-hidden">Open menu</span>
           </button>
           <ul class="main-nav__list site-list">
-            <li class="site-list__item"><a class="site-list__item-link" href="index.html">Главная</a></li>
-            <li class="site-list__item"><a class="site-list__item-link" href="catalog.html">Каталог продукции</a></li>
-            <li class="site-list__item"><a class="site-list__item-link site-list__item-link--active">Подбор программы</a></li>
+            <li class="site-list__item"><a class="site-list__item-link" href="index.html">Home</a></li>
+            <li class="site-list__item"><a class="site-list__item-link" href="catalog.html">Catalog</a></li>
+            <li class="site-list__item"><a class="site-list__item-link site-list__item-link--active">Choosing the program</a></li>
           </ul>
         </nav>
       </div>
@@ -41,51 +41,51 @@
 
     <main class="page-form">
       <div class="page-form__big-title-wrapper container">
-        <h1 class="page-form__big-title big-title">Подбор программы</h1>
+        <h1 class="page-form__big-title big-title">Choosing the program</h1>
       </div>
       <div class="page-form__wrapper container">
-        <p class="page-form__form-description">Заполните анкету и мы подберем  программу питания для вашего кота</p>
+        <p class="page-form__form-description">Fill in the forms and we will send you nutrition program for your cat</p>
         <form class="page-form__form main-form" method="get" action="https://echo.htmlacademy.ru">
           <div class="page-form__form-info-goal-wrapper">
             <fieldset class="main-form__fieldset main-form__fieldset--info">
-              <legend class="visually-hidden">Параметры кота</legend>
+              <legend class="visually-hidden">Cat's parameters</legend>
               <ul class="main-form__cat-info-list">
                 <li class="main-form__cat-info-item">
-                  <label class="main-form__label-text" for="main-form__cat-info-name">Имя:*</label>
-                  <input class="main-form__input-text" type="text" name="name" id="main-form__cat-info-name" placeholder="Барсик" required>
+                  <label class="main-form__label-text" for="main-form__cat-info-name">Name:*</label>
+                  <input class="main-form__input-text" type="text" name="name" id="main-form__cat-info-name" placeholder="Tiger" required>
                 </li>
                 <li class="main-form__cat-info-item">
-                  <label class="main-form__label-text" for="main-form__cat-info-weight">Вес (кг):*</label>
+                  <label class="main-form__label-text" for="main-form__cat-info-weight">Weight (kg):*</label>
                   <input class="main-form__input-text" type="number" name="weight" id="main-form__cat-info-weight" min="0" max="100" placeholder="7" required>
                 </li>
                 <li class="main-form__cat-info-item">
-                  <label class="main-form__label-text" for="main-form__cat-info-age">Возраст (лет):</label>
+                  <label class="main-form__label-text" for="main-form__cat-info-age">Age (years):</label>
                   <input class="main-form__input-text" type="number" name="age" id="main-form__cat-info-age" min="0" max="100" placeholder="7">
                 </li>
               </ul>
             </fieldset>
 
             <fieldset class="main-form__fieldset main-form__fieldset--goal">
-              <legend class="visually-hidden">Цель диеты</legend>
+              <legend class="visually-hidden">Goal of the diet</legend>
               <ul class="main-form__cat-goal-list">
                 <li class="main-form__cat-goal-item">
-                  <input class="visually-hidden main-form__cat-goal-input" type="radio" name="goal" id="main-form__cat-goal-lose-weight" value="Похудение" checked>
-                  <label class="main-form__cat-goal-label" for="main-form__cat-goal-lose-weight">Похудение</label>
+                  <input class="visually-hidden main-form__cat-goal-input" type="radio" name="goal" id="main-form__cat-goal-lose-weight" value="Loosing weight" checked>
+                  <label class="main-form__cat-goal-label" for="main-form__cat-goal-lose-weight">Loosing weight</label>
                 </li>
                 <li class="main-form__cat-goal-item">
-                  <input class="visually-hidden main-form__cat-goal-input" type="radio" name="goal" id="main-form__cat-goal-gain-weight" value="Набор массы">
-                  <label class="main-form__cat-goal-label" for="main-form__cat-goal-gain-weight">Набор массы</label>
+                  <input class="visually-hidden main-form__cat-goal-input" type="radio" name="goal" id="main-form__cat-goal-gain-weight" value="Gaining weight">
+                  <label class="main-form__cat-goal-label" for="main-form__cat-goal-gain-weight">Gaining weight</label>
                 </li>
                 <li class="main-form__cat-goal-item">
                   <input class="visually-hidden main-form__cat-goal-input" type="radio" name="goal" id="main-form__cat-goal-dont-know" value="goal">
-                  <label class="main-form__cat-goal-label" for="main-form__cat-goal-dont-know">Не знаю (нужен ваш совет)</label>
+                  <label class="main-form__cat-goal-label" for="main-form__cat-goal-dont-know">I don't know (need your advice)</label>
                 </li>
               </ul>
             </fieldset>
           </div>
 
           <fieldset class="main-form__fieldset main-form__fieldset--contacts">
-            <legend class="main-form__legend-title">Контактные данные (владельца кота)</legend>
+            <legend class="main-form__legend-title">Contact info (cat's owner)</legend>
             <ul class="main-form__cat-contacts-list">
               <li class="main-form__cat-contacts-item">
                 <label class="main-form__label-text" for="main-form__cat-contacts-email">e-mail:*</label>
@@ -93,7 +93,7 @@
                 <svg class="main-form__input-text-email" width="17" height="13"><use xlink:href="#icon-mail"></use></svg>
               </li>
               <li class="main-form__cat-contacts-item">
-                <label class="main-form__label-text" for="main-form__cat-contacts-telephone">Телефон:*</label>
+                <label class="main-form__label-text" for="main-form__cat-contacts-telephone">Phone number:*</label>
                 <input class="main-form__input-text" type="tel" name="telephone" id="main-form__cat-contacts-telephone" placeholder="8 (960) 900-60-90" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" required>
                 <svg class="main-form__input-text-tel" width="20" height="20"><use xlink:href="#icon-phone"></use></svg>
               </li>
@@ -101,34 +101,34 @@
           </fieldset>
 
           <section class="main-form__cat-comment">
-            <h3 class="main-form__legend-title">Комментарий</h3>
-            <textarea class="main-form__cat-user-comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+            <h3 class="main-form__legend-title">Comment</h3>
+            <textarea class="main-form__cat-user-comment" placeholder="Tell us about your cat's habits"></textarea>
           </section>
 
           <fieldset class="main-form__fieldset main-form__fieldset--extra">
-            <legend class="main-form__legend-title">Дополнительно</legend>
+            <legend class="main-form__legend-title">Extra</legend>
             <ul class="main-form__cat-extra-list">
               <li class="main-form__cat-extra-item">
                 <input class="visually-hidden main-form__cat-extra-input" type="checkbox" name="Sweetener" id="main-form__cat-extra-sweetener" checked>
-                <label class="main-form__cat-extra-label" for="main-form__cat-extra-sweetener">Сахарозаменитель</label>
+                <label class="main-form__cat-extra-label" for="main-form__cat-extra-sweetener">Sweetener</label>
               </li>
               <li class="main-form__cat-extra-item">
                 <input class="visually-hidden main-form__cat-extra-input" type="checkbox" name="Drinking water" id="main-form__cat-extra-drinking-water">
-                <label class="main-form__cat-extra-label" for="main-form__cat-extra-drinking-water">Питьевая вода</label>
+                <label class="main-form__cat-extra-label" for="main-form__cat-extra-drinking-water">Drinking water</label>
               </li>
               <li class="main-form__cat-extra-item">
                 <input class="visually-hidden main-form__cat-extra-input" type="checkbox" name="Milk" id="main-form__cat-extra-milk">
-                <label class="main-form__cat-extra-label" for="main-form__cat-extra-milk">Молоко</label>
+                <label class="main-form__cat-extra-label" for="main-form__cat-extra-milk">Milk</label>
               </li>
               <li class="main-form__cat-extra-item">
                 <input class="visually-hidden main-form__cat-extra-input" type="checkbox" name="Vitamins" id="main-form__cat-extra-vitamins">
-                <label class="main-form__cat-extra-label" for="main-form__cat-extra-vitamins">Витамины</label>
+                <label class="main-form__cat-extra-label" for="main-form__cat-extra-vitamins">Vitamins</label>
               </li>
             </ul>
           </fieldset>
           <div class="main-form__btn-required-wrapper">
-            <button class="btn main-form__btn" type="submit">Отправить заявку</button>
-            <small class="main-form__required">* — Обязательные поля</small>
+            <button class="btn main-form__btn" type="submit">Send an application</button>
+            <small class="main-form__required">* — Required</small>
           </div>
         </form>
       </div>
@@ -137,14 +137,14 @@
         <div class="invite-retailers__desktop-wrapper">
           <section class="invite-retailers invite-retailers--mobile">
             <div class="invite-retailers__wrapper">
-              <h2 class="invite-retailers__title">Приглашаем<br>к сотрудничеству дилеров!</h2>
-              <p class="standart-text invite-retailers__address">ул. Большая Конюшенная, д. 19/8 <span class="invite-retailers__address--tablet-space">Санкт-Петербург</span></p>
+              <h2 class="invite-retailers__title">We invite<br>distributors to work with us!</h2>
+              <p class="standart-text invite-retailers__address">Bolshaya Konyushennaya St,19/8<span class="invite-retailers__address--tablet-space">Saint-Petersburg</span></p>
             </div>
           </section>
         </div>
 
         <section class="map">
-            <h2 class="visually-hidden">Наше расположение на карте</h2>
+            <h2 class="visually-hidden">Location on the map</h2>
             <div class="map__image">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6059712664778!2d30.32335249758387!3d59.93868024400038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya+Konyushennaya+Street%2C+19%2F8%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2sca!4v1557756205670!5m2!1sen!2sca" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
@@ -155,7 +155,7 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper container">
         <a class="page-footer__company-name company-name">
-          <img src="img/logo-footer.svg" alt="Логотип магазина 'Cat energy'" width="130" height="50">
+          <img src="img/logo-footer.svg" alt="Logotype 'Cat energy'" width="130" height="50">
         </a>
         <div class="page-footer__social social">
           <ul class="social__list">
