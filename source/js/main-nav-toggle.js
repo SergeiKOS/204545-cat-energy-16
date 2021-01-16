@@ -13,7 +13,7 @@ mainNavToggle.addEventListener("click", function () {
   } else {
     mainNavToggle.classList.add("main-nav__toggle--closed");
     siteList.style.display = "block";
-    siteList.style.position = "static";
+    siteList.style.position = "absolute";
     pageHeaderWrapper.style.display = "block";
   }
 });

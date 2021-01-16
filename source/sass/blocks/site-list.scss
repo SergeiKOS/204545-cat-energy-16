@@ -5,6 +5,7 @@
   text-align: center;
   background-color: #ffffff;
   display: none;
+  width: 100%;
 }
 
 .site-list__item {
@@ -18,7 +19,6 @@
   padding-bottom: 20px;
   display: block;
   white-space: nowrap;
-
 
   &:not(&--active):hover {
     color: rgba(#111111, 0.6);
