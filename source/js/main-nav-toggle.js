@@ -9,11 +9,9 @@ pageHeaderWrapper.classList.remove("page-header__wrapper--nojs");
 mainNavToggle.addEventListener("click", function () {
   if (mainNavToggle.classList.contains("main-nav__toggle--closed")) {
     mainNavToggle.classList.remove("main-nav__toggle--closed");
-    siteList.style.display = "none";
+    siteList.classList.remove("site-list--open");
   } else {
     mainNavToggle.classList.add("main-nav__toggle--closed");
-    siteList.style.display = "block";
-    siteList.style.position = "absolute";
-    pageHeaderWrapper.style.display = "block";
+    siteList.classList.add("site-list--open");
   }
 });

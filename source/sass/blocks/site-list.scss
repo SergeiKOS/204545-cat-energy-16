@@ -8,6 +8,14 @@
   width: 100%;
 }
 
+@media (max-width: $mobile-width-only) {
+  .site-list--open {
+    display: block;
+    position: absolute;
+    top: 61px;
+  }
+}
+
 .site-list__item {
   padding-top: 3px;
   padding-bottom: 3px;
